@@ -5,6 +5,12 @@
 
 $gray-medium-light: #eaeaea;
 
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+
 
 /* -------------------- UNIVERSAL -------------------- */
 
@@ -58,7 +64,7 @@ p {
 
 /* -------------------- HEADER -------------------- */
 
-#logo {
+#logotext {
   color: #fff;
   float: left;
   font-size: 1.7em;
@@ -71,6 +77,13 @@ p {
     color: #fff;
     text-decoration: none;
   }
+}
+
+#logo img {
+  display: block;
+  float: left;
+  height: 40px;
+  margin: 5px;
 }
 
 
@@ -98,4 +111,83 @@ footer {
       margin-left: 15px;
     }
   }
+}
+
+
+/* ------------------- SIDEBAR ------------------- */
+
+aside {
+  section.user_info {
+    margin-top: 20px;
+  }
+  section {
+    margin-top: 20px;
+    padding: 10px 0;
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+    }
+    span {
+      display: block;
+      line-height: 1;
+      margin-bottom: 3px;
+    }
+    h1 {
+      font-size: 1.4em;
+      letter-spacing: -1px;
+      margin-top: 0px;
+      margin-bottom: 3px;
+      text-align: left;
+    }
+  }
+}
+
+.gravatar {
+  border-radius: 30%;
+  float: left;
+  margin-right: 10px;
+}
+
+.gravatar_edit {
+  margin-top: 15px;
+}
+
+
+/* -------------------- FORMS -------------------- */
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  margin-bottom: 15px;
+  width: 100%;
+  @include box_sizing;
+}
+
+input {
+  height: auto !important;
+}
+
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
+}
+
+
+/* ---------------- MISCELLANEOUS ---------------- */
+
+.debug_dump {
+  clear: both;
+  float: left;
+  margin-top: 45px;
+  width: 100%;
+  @include box_sizing;
 }
