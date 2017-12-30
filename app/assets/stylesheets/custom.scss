@@ -15,7 +15,7 @@ $gray-medium-light: #eaeaea;
 /* -------------------- UNIVERSAL -------------------- */
 
 body {
-  background-color: #eee;
+  background-color: #e2e2e2;
   padding-top: 60px;
 }
 
@@ -201,6 +201,18 @@ input {
   }
 }
 
+.checkbox {
+  margin: -10px 0 15px 0;
+  span {
+    font-weight: normal;
+    margin-left: 20px;
+  }
+}
+
+#session_remember_me {
+  margin-left: 0;
+  width: auto;
+}
 
 /* ---------------- MISCELLANEOUS ---------------- */
 
@@ -209,7 +221,7 @@ input {
 }
 
 .jumbotron {
-  background-color: #fff;
+  background-color: #eee;
   padding-top: 20px;
   img {
     height: 100px;
