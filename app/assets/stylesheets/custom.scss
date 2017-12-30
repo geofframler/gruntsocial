@@ -15,6 +15,7 @@ $gray-medium-light: #eaeaea;
 /* -------------------- UNIVERSAL -------------------- */
 
 body {
+  background-color: #eee;
   padding-top: 60px;
 }
 
@@ -33,6 +34,17 @@ textarea {
   }
 }
 
+.btn-primary {
+  color: #fff;
+  background-color: #14a064;
+  border-color: #0a5032;
+  &:hover {
+    background-color: #108050 !important;
+  }
+  &:focus, &:active, .active, .open > .dropdown-toggle.btn-primary  {
+    background-color: #0c603c !important;
+  }
+}
 
 /* ------------------ TYPOGRAPHY -------------------- */
 
@@ -51,7 +63,7 @@ h2 {
   color: $gray-light;
   font-size: 1.2em;
   font-weight: normal;
-  letter-spacing: -1px;
+  letter-spacing: -.5px;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -63,6 +75,13 @@ p {
 
 
 /* -------------------- HEADER -------------------- */
+
+.navbar-inverse {
+  background-color: #12905a;
+  .navbar-nav > li > a {
+      color: #eee;
+  }
+}
 
 #logotext {
   color: #fff;
@@ -92,7 +111,7 @@ p {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid $gray-medium-light;
+  border-top: 1px solid $gray-light;
   color: $gray-light;
   a {
     color: $gray;
@@ -143,7 +162,8 @@ aside {
 }
 
 .gravatar {
-  border-radius: 30%;
+  border: 4px solid black;
+  border-radius: 30% 10%;
   float: left;
   margin-right: 10px;
 }
@@ -183,6 +203,18 @@ input {
 
 
 /* ---------------- MISCELLANEOUS ---------------- */
+
+.powered img {
+  padding: 0 5px;
+}
+
+.jumbotron {
+  background-color: #fff;
+  padding-top: 20px;
+  img {
+    height: 100px;
+  }
+}
 
 .debug_dump {
   clear: both;
