@@ -16,7 +16,7 @@ $gray-medium-light: #eaeaea;
 
 body {
   background-color: #e2e2e2;
-  padding-top: 60px;
+  padding-top: 90px;
 }
 
 section {
@@ -109,10 +109,11 @@ p {
 /* -------------------- FOOTER -------------------- */
 
 footer {
-  margin-top: 45px;
-  padding-top: 5px;
+  background-color: #e2e2e2;
   border-top: 1px solid $gray-light;
   color: $gray-light;
+  margin-top: 45px;
+  padding-top: 5px;
   a {
     color: $gray;
     &:hover {
@@ -162,14 +163,14 @@ aside {
 }
 
 .gravatar {
-  border: 4px solid black;
+  border: 3px solid black;
   border-radius: 30% 10%;
   float: left;
   margin-right: 10px;
 }
 
 .gravatar_edit {
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 
@@ -213,6 +214,21 @@ input {
   margin-left: 0;
   width: auto;
 }
+
+
+/* -------------------- USERS -------------------- */
+
+.users {
+  list-style: none;
+  margin: 0 auto;
+  //width: 40%;
+  li {
+    border-bottom: 1px solid $gray-lighter;
+    overflow: auto;
+    padding: 10px 0;
+  }
+}
+
 
 /* ---------------- MISCELLANEOUS ---------------- */
 
