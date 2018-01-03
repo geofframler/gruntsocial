@@ -3,6 +3,9 @@
 
 /* -------------- MIXINS/VARIABLES/ETC --------------- */
 
+$theme-color: #14a064;
+$theme-color-dark: #108050;
+$theme-color-darker: #0c603c;
 $gray-medium-light: #eaeaea;
 
 @mixin box_sizing {
@@ -17,6 +20,10 @@ $gray-medium-light: #eaeaea;
 body {
   background-color: #e2e2e2;
   padding-top: 90px;
+}
+
+a {
+  color: $theme-color-dark;
 }
 
 section {
@@ -36,15 +43,16 @@ textarea {
 
 .btn-primary {
   color: #fff;
-  background-color: #14a064;
+  background-color: $theme-color;
   border-color: #0a5032;
   &:hover {
-    background-color: #108050 !important;
+    background-color: $theme-color-dark !important;
   }
   &:focus, &:active, .active, .open > .dropdown-toggle.btn-primary  {
-    background-color: #0c603c !important;
+    background-color: $theme-color-darker !important;
   }
 }
+
 
 /* ------------------ TYPOGRAPHY -------------------- */
 
