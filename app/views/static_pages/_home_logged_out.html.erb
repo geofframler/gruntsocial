@@ -1,0 +1,23 @@
+<div class="center jumbotron">
+  <h1>Welcome to Grunt!</h1>
+
+  <%= image_tag("icon.png", alt: "Grog") %>
+
+  <h2>
+    Yet another Microposting Platform, but instead of 140 characters, you get 14.<br><br>
+    It's a Micro-Microposting Platform.<br><br>
+    GET CREATIVE.
+  </h2>
+
+  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+
+<div class="center">
+  <p>Powered by</p>
+  <div class="powered">
+  <%= link_to image_tag("rails.png", alt: "Rails logo"),
+                                   'http://rubyonrails.org/', target: :_blank %>
+  <%= link_to image_tag("bootstrap.png", alt: "Bootstrap logo"),
+                                   'https://getbootstrap.com/', target: :_blank %>
+  </div>
+</div>
