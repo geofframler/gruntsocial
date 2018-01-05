@@ -24,6 +24,9 @@ body {
 
 a {
   color: $theme-color-dark;
+  &:hover, &:focus, &:active {
+    color: $theme-color-darker;
+  }
 }
 
 section {
@@ -51,6 +54,60 @@ textarea {
   &:focus, &:active, .active, .open > .dropdown-toggle.btn-primary  {
     background-color: $theme-color-darker !important;
   }
+}
+
+.btn-follow, .btn-unfollow {
+  width: 100px;
+  margin-top: 15px;
+}
+
+.btn-unfollow {
+  background-color: #999999;
+  &:hover {
+    background-color: #990000 !important;
+  }
+  &:focus, &:active {
+    background-color: #660000 !important;
+  }
+}
+
+.row {
+  margin: auto;
+}
+
+.col-sm-3, .col-sm-6, .col-md-4 {
+  background-color: white !important;
+  border: 2px solid #888 !important;
+  border-radius: 20px;
+}
+
+.col-sm-3, .col-sm-6 {
+  margin: 0 5px;
+  padding: 0 10px 20px;
+}
+
+.col-md-4 {
+  padding-bottom: 16px;
+  padding-top: 10px;
+}
+
+.pagination > li > a {
+  color: $theme-color-dark;
+}
+
+.pagination > li.active > a,
+.pagination > li.active:hover > a {
+  background-color: $theme-color-dark;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+    z-index: 3;
+    color: #fff;
+    background-color: $theme-color;
+    border-color: #ddd;
 }
 
 
@@ -124,7 +181,7 @@ footer {
   padding-top: 5px;
   a {
     color: $gray;
-    &:hover {
+    &:hover, &:focus, &:active {
       color: $gray-darker;
     }
   }
@@ -178,7 +235,44 @@ aside {
 }
 
 .gravatar_edit {
-  margin-top: 30px;
+  margin-top: 35px;
+}
+
+.stats {
+  margin-top: 0;
+  overflow: auto;
+  padding: 0;
+  a {
+    border-left: 1px solid $gray-lighter;
+    color: gray;
+    float: left;
+    padding: 0 10px;
+    &:first-child {
+      border: 0;
+      padding-left: 0;
+    }
+    &:hover {
+      color: $theme-color-dark;
+    }
+  }
+  strong {
+    display: block;
+  }
+}
+
+.user_avatars {
+  margin-top: 10px;
+  overflow: auto;
+  .gravatar {
+    margin: 1px 1px;
+  }
+  a {
+    padding: 0;
+  }
+}
+
+.users.follow {
+  padding: 0;
 }
 
 
@@ -222,7 +316,6 @@ input {
   margin-left: 0;
   width: auto;
 }
-
 
 /* -------------------- USERS -------------------- */
 
@@ -289,7 +382,13 @@ span.picture {
 /* ---------------- MISCELLANEOUS ---------------- */
 
 .powered img {
+  height: 111px;
   padding: 0 5px;
+  opacity: 0.6;
+  transition: opacity .3s;
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .jumbotron {
@@ -306,4 +405,8 @@ span.picture {
   margin-top: 45px;
   width: 100%;
   @include box_sizing;
+}
+
+.loginbox {
+  padding-bottom: 0px;
 }
