@@ -75,10 +75,11 @@ textarea {
   margin: auto;
 }
 
-.col-sm-3, .col-sm-6, .col-md-4 {
+.col-sm-3, .col-sm-6, .col-md-4 , .col-md-6, .col-md-8  {
   background-color: white !important;
-  border: 2px solid #888 !important;
-  border-radius: 20px;
+  border: 1px solid #888 !important;
+  border-radius: 5px;
+  box-shadow: -2px 2px 10px #888;
 }
 
 .col-sm-3, .col-sm-6 {
@@ -86,9 +87,32 @@ textarea {
   padding: 0 10px 20px;
 }
 
+.col-sm-3 {
+  position: fixed;
+  display: block;
+  width: 290px;
+}
+
+.col-sm-6 {
+  margin-left: 310px;
+}
+
 .col-md-4 {
   padding-bottom: 16px;
   padding-top: 10px;
+}
+
+.col-md-8 {
+  padding-top: 10px;
+}
+
+.micropost_picture img {
+  border: 1px solid #555;
+  border-radius: 2px;
+  box-shadow: -1px 1px 10px #888;
+  max-width: 98%;
+  padding: 0px !important;
+  margin: 10px 10px;
 }
 
 .pagination > li > a {
@@ -224,6 +248,12 @@ aside {
       margin-bottom: 3px;
       text-align: left;
     }
+  }
+  textarea {
+    font-size: 20px;
+    padding: 10px;
+    height: 50px;
+    resize: none;
   }
 }
 
@@ -364,15 +394,9 @@ input {
   }
 }
 
-aside {
-  textarea {
-    height: 100px;
-    margin-bottom: 5px;
-  }
-}
-
 span.picture {
   margin-top: 10px;
+  margin-bottom: -10px;
   input {
     border: 0;
   }
@@ -409,4 +433,22 @@ span.picture {
 
 .loginbox {
   padding-bottom: 0px;
+}
+
+.alert {
+  margin-top: -20px;
+}
+
+.signup_alert {
+  margin-top: 30px;
+  margin-bottom: -30px;
+}
+
+.follow_right {
+  float: right;
+  margin-top: -10px;
+}
+
+.edit_profile_link {
+  font-size: .8em;
 }
