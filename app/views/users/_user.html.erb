@@ -1,18 +1,20 @@
 <li>
-  <div class="follow_right" id="<%= "follow-box-#{user.id}" %>">
-    <% if current_user.following?(user) && current_user != user %>
-      <%= form_for(current_user.active_relationships.find_by(followed_id: user.id),
+  <% unless current_user?(user) %>
+    <div class="follow_right" data-user_id="<%= "#{user.id}" %>"
+                              id="<%= "follow-form" %>">
+      <% if current_user.following?(user) %>
+        <%= form_for(current_user.active_relationships.find_by(followed_id: user.id),
                    html: { method: :delete }) do |f| %>
-        <%= f.submit "Unfollow", class: "btn btn-primary btn-unfollow" %>
+          <%= f.submit "Unfollow", class: "btn btn-primary btn-unfollow" %>
+        <% end %>
+      <% else %>
+        <%= form_for(current_user.active_relationships.build) do |f| %>
+          <div><%= hidden_field_tag :followed_id, user.id %></div>
+          <%= f.submit "Follow", class: "btn btn-primary btn-follow" %>
+        <% end %>
       <% end %>
-    <% elsif current_user == user %>
-    <% elsif %>
-      <%= form_for(current_user.active_relationships.build) do |f| %>
-        <div><%= hidden_field_tag :followed_id, user.id %></div>
-        <%= f.submit "Follow", class: "btn btn-primary btn-follow" %>
-      <% end %>
-    <% end %>
-  </div>
+    </div>
+  <% end %>
   <%= gravatar_for user, size: 50 %>
   <%= link_to user.name, user %>
   <% if current_user.admin? && !current_user?(user) %>

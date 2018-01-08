@@ -19,14 +19,19 @@ $gray-medium-light: #eaeaea;
 
 body {
   background-color: #e2e2e2;
-  padding-top: 90px;
+  padding-top: 110px;
 }
 
 a {
   color: $theme-color-dark;
+  transition: all .3s;
   &:hover, &:focus, &:active {
     color: $theme-color-darker;
   }
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
 }
 
 section {
@@ -48,6 +53,7 @@ textarea {
   color: #fff;
   background-color: $theme-color;
   border-color: #0a5032;
+  transition: background-color .3s;
   &:hover {
     background-color: $theme-color-dark !important;
   }
@@ -63,6 +69,7 @@ textarea {
 
 .btn-unfollow {
   background-color: #999999;
+  border-color: #333;
   &:hover {
     background-color: #990000 !important;
   }
@@ -77,14 +84,14 @@ textarea {
 
 .col-sm-3, .col-sm-6, .col-md-4 , .col-md-6, .col-md-8  {
   background-color: white !important;
-  border: 1px solid #888 !important;
+  border: 0px solid #888 !important;
   border-radius: 5px;
-  box-shadow: -2px 2px 10px #888;
+  box-shadow: -1px 1px 8px #888;
 }
 
 .col-sm-3, .col-sm-6 {
   margin: 0 5px;
-  padding: 0 10px 20px;
+  padding: 0 20px 20px;
 }
 
 .col-sm-3 {
@@ -98,12 +105,11 @@ textarea {
 }
 
 .col-md-4 {
-  padding-bottom: 16px;
-  padding-top: 10px;
+  padding: 20px;
 }
 
 .col-md-8 {
-  padding-top: 10px;
+  padding: 20px 20px 12px 20px;
 }
 
 .micropost_picture img {
@@ -145,6 +151,7 @@ h1 {
   font-size: 3em;
   letter-spacing: -2px;
   margin-bottom: 30px;
+  margin-top: 0px;
   text-align: center;
 }
 
@@ -167,9 +174,22 @@ p {
 
 .navbar-inverse {
   background-color: #12905a;
+  height: 70px;
+  padding-top: 10px;
+  box-shadow: 0px 4px 8px #555;
+  border: none;
   .navbar-nav > li > a {
       color: #eee;
   }
+}
+
+.dropdown {
+  height: 60px;
+}
+
+.dropdown-toggle {
+  height: 60px;
+  margin-top: 0px;
 }
 
 #logotext {
@@ -250,8 +270,8 @@ aside {
     }
   }
   textarea {
-    font-size: 20px;
-    padding: 10px;
+    font-size: 18px;
+    padding: 11px;
     height: 50px;
     resize: none;
   }
@@ -269,9 +289,11 @@ aside {
 }
 
 .stats {
-  margin-top: 0;
+  display: block;
+  margin: 0 auto;
   overflow: auto;
   padding: 0;
+  text-align: center;
   a {
     border-left: 1px solid $gray-lighter;
     color: gray;
@@ -290,6 +312,12 @@ aside {
   }
 }
 
+.stats_wrapper {
+  display: block;
+  margin: auto;
+  width: 141px;
+}
+
 .user_avatars {
   margin-top: 10px;
   overflow: auto;
@@ -303,6 +331,16 @@ aside {
 
 .users.follow {
   padding: 0;
+}
+
+.profile_link_view {
+  margin-top: -3px;
+  padding-left: 72px;
+}
+
+.profile_link_edit {
+    margin-top: -3px;
+  padding-left: 102px;
 }
 
 
@@ -351,7 +389,8 @@ input {
 
 .users {
   list-style: none;
-  margin: 0 auto;
+  margin-left: -20px;
+  padding-right: 25px;
   //width: 40%;
   li {
     border-bottom: 1px solid $gray-lighter;
@@ -432,7 +471,7 @@ span.picture {
 }
 
 .loginbox {
-  padding-bottom: 0px;
+  padding-bottom: 5px;
 }
 
 .alert {
