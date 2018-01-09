@@ -7,7 +7,11 @@ class RelationshipsController < ApplicationController
     @user = User.find(params[:followed_id])
     current_user.follow(@user)
     respond_to do |format|
-      format.html { redirect_back(fallback_location: '/') }
+      format.html {
+        user_name = @user.name
+        flash[:success] = "Followed #{user_name}"
+        redirect_back(fallback_location: '/')
+      }
       format.js
     end
   end
@@ -16,7 +20,10 @@ class RelationshipsController < ApplicationController
     @user = Relationship.find(params[:id]).followed
     current_user.unfollow(@user)
     respond_to do |format|
-      format.html { redirect_back(fallback_location: '/') }
+      format.html {
+        user_name = @user.name
+        flash[:danger] = "Unfollowed #{user_name}"
+        redirect_back(fallback_location: '/') }
       format.js
     end
   end
