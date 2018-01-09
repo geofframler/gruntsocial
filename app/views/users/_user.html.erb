@@ -1,7 +1,8 @@
 <li>
   <% unless current_user?(user) %>
-    <div class="follow_right" data-user_id="<%= "#{user.id}" %>"
-                              id="<%= "follow-form" %>">
+    <div class="follow_right <%= "follow-form-#{user.id}" %>"
+                              data-user_id="<%= "#{user.id}" %>"
+                              id="<%= "follow-form-#{user.id}" %>">
       <% if current_user.following?(user) %>
         <%= form_for(current_user.active_relationships.find_by(followed_id: user.id),
                    html: { method: :delete }) do |f| %>
