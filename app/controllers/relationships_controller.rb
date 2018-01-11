@@ -22,7 +22,7 @@ class RelationshipsController < ApplicationController
     respond_to do |format|
       format.html {
         user_name = @user.name
-        flash[:danger] = "Unfollowed #{user_name}"
+        flash[:warning] = "Unfollowed #{user_name}"
         redirect_back(fallback_location: '/') }
       format.js
     end

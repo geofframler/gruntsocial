@@ -3,7 +3,9 @@
   <aside class="col-sm-3">
     <section class="user_info">
       <h1>
+        <div class="gravatar_profile">
         <%= gravatar_for @user %>
+        </div>
         <%= @user.name %>
         <%= render 'follow_form' if logged_in? %>
       </h1>
@@ -29,6 +31,10 @@
       <%= will_paginate(@microposts,
                         renderer: WillPaginate::ActionView::Bootstrap4LinkRenderer,
                         class: 'text-center') %>
+    <% else %>
+      <h3>Grunts (0)</h3>
+      <p>You have not Grunted yet! Get started with the form on the left.</p>
+      <p>And while you're at it, why not follow some other <%= link_to "users", users_url %> to see their Grunts on the homepage too!</p>
     <% end %>
   </div>
 </div>

@@ -4,8 +4,8 @@
     <section class="user_info">
       <%= gravatar_for @user %>
       <h1><%= @user.name %></h1>
-      <span><%= link_to "View Profile", @user %></span>
-      <span><b>Grunts:</b> <%= @user.microposts.count %></span>
+      <div class="profile_link_view"><%= link_to "View Profile", @user %></div>
+      <div class="profile_link_view"><b>Grunts:</b> <%= @user.microposts.count %></div>
     </section>
     <section class="stats">
       <%= render 'shared/stats' %>
@@ -26,6 +26,8 @@
       </ul>
       <%= will_paginate(renderer: WillPaginate::ActionView::Bootstrap4LinkRenderer,
                         class: 'text-center') %>
+    <% else %>
+      <p>Start following <%= link_to "users", users_url %> to develop your own social network of Grunters!</p>
     <% end %>
   </div>
 </div>

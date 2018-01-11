@@ -16,4 +16,13 @@
       alert('Maximum file size is 5MB. Please choose a smaller file.')
     }
   });
+
+  $(".field").keydown(function(e){
+    // Enter was pressed in post box.
+    if (e.keyCode == 13)
+    {
+      // Prevent default behavior.
+      e.preventDefault();
+    }
+  });
 </script>

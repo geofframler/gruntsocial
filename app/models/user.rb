@@ -17,7 +17,8 @@ class User < ApplicationRecord
                     format: { with: VALID_EMAIL_REGEX },
                     uniqueness: { case_sensitive: false }
   has_secure_password
-  validates :password, presence: true, length: { minimum: 6 }, allow_nil:true
+  validates :password, presence: true, length: { minimum: 6, maximum: 40 }, allow_nil:true
+  validate :password_complexity
 
   class << self
     # Returns the hash digest of the given string.
@@ -99,6 +100,16 @@ class User < ApplicationRecord
   # Returns true if the current user is following the other user.
   def following?(other_user)
     following.include?(other_user)
+  end
+
+  # Validates password complexity.
+  def password_complexity
+    if password.present?
+      if !password.match(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])/)
+        errors.add :password, "complexity not met, must contain at least
+                               1 uppercase, 1 lowercase, and 1 number."
+      end
+    end
   end
 
   private

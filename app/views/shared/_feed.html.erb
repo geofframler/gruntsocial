@@ -5,4 +5,7 @@
   <%= will_paginate(@feed_items,
                     renderer: WillPaginate::ActionView::Bootstrap4LinkRenderer,
                     class: 'text-center') %>
+<% else %>
+  <p>You have not Grunted yet! Get started with the form on the left.</p>
+  <p>And while you're at it, why not follow some other <%= link_to "users", users_url %> to see their Grunts on the homepage too!</p>
 <% end %>
