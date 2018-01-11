@@ -32,9 +32,14 @@
                         renderer: WillPaginate::ActionView::Bootstrap4LinkRenderer,
                         class: 'text-center') %>
     <% else %>
-      <h3>Grunts (0)</h3>
-      <p>You have not Grunted yet! Get started with the form on the left.</p>
-      <p>And while you're at it, why not follow some other <%= link_to "users", users_url %> to see their Grunts on the homepage too!</p>
+      <% if current_user == @user %>
+        <h3>Grunts (0)</h3>
+        <p>You have not Grunted yet! Get started with the form on the left.</p>
+        <p>And while you're at it, why not follow some other <%= link_to "users", users_url %> to see their Grunts on the homepage too!</p>
+      <% else %>
+        <h3>Grunts (0)</h3>
+        <p><%= @user.name %> has not started Grunting yet, follow them to see their posts on the homepage when they do!</p>
+      <% end %>
     <% end %>
   </div>
 </div>
