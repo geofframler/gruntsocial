@@ -5,17 +5,17 @@ class MicropostsController < ApplicationController
   def create
     @micropost = current_user.microposts.build(micropost_params)
     if @micropost.save
-      flash[:success] = "Grunt created!"
+      flash[:success] = "Grunted!"
       redirect_back(fallback_location: '/')
     else
-      @feed_items = []
-      render 'static_pages/home'
+      flash[:danger] = "Grunts can not be empty. Please try again."
+      redirect_back(fallback_location: '/')
     end
   end
 
   def destroy
     @micropost.destroy
-    flash[:success] = "Grunt deleted"
+    flash[:warning] = "Ungrunted"
     redirect_to request.referrer || root_url
   end
 
