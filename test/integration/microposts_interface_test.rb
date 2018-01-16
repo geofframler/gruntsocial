@@ -13,7 +13,8 @@ class MicropostsInterfaceTest < ActionDispatch::IntegrationTest
     assert_no_difference 'Micropost.count' do
       post microposts_path, params: { micropost: { content: "" } }
     end
-    assert_select 'div#error_explanation'
+    #assert_template '/'
+    #assert_select 'div#alert alert-danger'
     # Valid submission
     content = "Test"
     assert_difference 'Micropost.count', 1 do

@@ -1,7 +1,7 @@
 geoff:
   name: Geoff Example
   email: geoff@example.com
-  password_digest: <%= User.digest('password') %>
+  password_digest: <%= User.digest('Password1') %>
   admin: true
   activated: true
   activated_at: <%= Time.zone.now %>
@@ -9,14 +9,14 @@ geoff:
 example:
   name: Example
   email: name@example.com
-  password_digest: <%= User.digest('password') %>
+  password_digest: <%= User.digest('Password1') %>
   activated: true
   activated_at: <%= Time.zone.now %>
 
 follow:
   name: Follow
   email: follow@example.com
-  password_digest: <%= User.digest('password') %>
+  password_digest: <%= User.digest('Password1') %>
   activated: true
   activated_at: <%= Time.zone.now %>
 
@@ -24,7 +24,7 @@ follow:
 user_<%= n %>:
   name:  <%= "User #{n}" %>
   email: <%= "user-#{n}@example.com" %>
-  password_digest: <%= User.digest('password') %>
+  password_digest: <%= User.digest('Password1') %>
   activated: true
   activated_at: <%= Time.zone.now %>
 <% end %>

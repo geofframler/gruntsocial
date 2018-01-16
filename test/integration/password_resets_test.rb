@@ -53,8 +53,8 @@ class PasswordResetsTest < ActionDispatch::IntegrationTest
     # Valid password & confirmation
     patch password_reset_path(user.reset_token),
           params: { email: user.email,
-                    user: { password:              "foobaz",
-                            password_confirmation: "foobaz" } }
+                    user: { password:              "Foobaz1",
+                            password_confirmation: "Foobaz1" } }
     assert is_logged_in?
     assert_not flash.empty?
     assert_redirected_to user
@@ -69,8 +69,8 @@ class PasswordResetsTest < ActionDispatch::IntegrationTest
     @user.update_attribute(:reset_sent_at, 3.hours.ago)
     patch password_reset_path(@user.reset_token),
           params: { email: @user.email,
-                    user: { password:              "foobar",
-                            password_confirmation: "foobar" } }
+                    user: { password:              "Foobar1",
+                            password_confirmation: "Foobar1" } }
     assert_response :redirect
     follow_redirect!
     assert_match /expired/i, response.body
