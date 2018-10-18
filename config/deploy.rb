@@ -2,9 +2,9 @@
 lock "~> 3.11.0"
 
 set :application, 'grunt_app'
-set :user, 'deployer'
-set :use_sudo, true
-set :repo_url, 'deployer@50.116.0.100:/home/deployer/repos/grunt_app.git'
+set :user,        'deployer'
+set :use_sudo,    true
+set :repo_url,    'deployer@50.116.0.100:/home/deployer/repos/grunt_app.git'
 
 # Default branch is :master
 ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
