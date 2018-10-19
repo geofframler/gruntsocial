@@ -1,7 +1,7 @@
 User.create!(name:  "Geoff Ramler",
              email: "geoffrey.ramler@gmail.com",
-             password:              "Fri$cit!6grunt",
-             password_confirmation: "Fri$cit!6grunt",
+             password:              "Password1",
+             password_confirmation: "Password1",
              admin: true,
              activated: true,
              activated_at: Time.zone.now)
