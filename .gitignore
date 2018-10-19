@@ -27,3 +27,5 @@
 
 /db/*
 /config/database.yml
+
+.env
