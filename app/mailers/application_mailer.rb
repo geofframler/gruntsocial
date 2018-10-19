@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'noreply@geofframler.com'
+  default from: 'noreply@grunt.social'
   layout 'mailer'
 end
