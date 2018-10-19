@@ -21,6 +21,7 @@ gem 'capistrano-rails'
 gem 'capistrano-bundler'
 gem 'unicorn'
 gem 'mailgun_rails'
+gem 'mailgun-ruby', '~> 1.1.9'
 
 group :development, :test do
   gem 'sqlite3', '1.3.13'
