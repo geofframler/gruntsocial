@@ -68,21 +68,21 @@ textarea {
   padding: 0 20px 20px;
 }
 
-.col-sm-3, .profile-box {
+.profile-box {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 70px;
   display: block;
   width: 290px;
   float: left;
+  padding: 0 15px 15px 15px;
 }
 
 .feed-box {
-  margin-top: -302px;
-}
-
-.profile-feed-box {
-  margin-top: -327px;
+  margin-left: 310px;
+  min-height: 430px;
+  padding: 1px 15px 15px 15px;
+  max-width: 600px;
 }
 
 .col-sm-6 {
@@ -674,7 +674,7 @@ span.picture {
     background-color: white !important;
     display: block;
     float: left;
-    width: 100%;
+    //width: 100%;
     //position: static;
     //clear: both;
     margin: 0px;
