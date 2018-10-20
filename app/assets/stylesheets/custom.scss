@@ -104,6 +104,10 @@ h1 {
   margin-bottom: 30px;
   margin-top: 0px;
   text-align: center;
+  sup {
+    font-size: .7em;
+    margin: 0 5px;
+  }
 }
 
 h2 {
@@ -112,6 +116,15 @@ h2 {
   font-weight: normal;
   letter-spacing: -.5px;
   margin-bottom: 30px;
+  text-align: center;
+}
+
+h3 {
+  color: $gray-light;
+  font-size: 1em;
+  font-weight: normal;
+  letter-spacing: -.5px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -143,15 +156,22 @@ p {
   margin-top: 0px;
 }
 
-#logotext {
+#logotext, #alpha-menu {
   color: #fff;
+  font-size: 1.5em;
   float: left;
-  font-size: 1.7em;
   font-weight: bold;
   letter-spacing: -1px;
   margin-right: 10px;
+  padding-top: 15px;
+}
+
+#logotext {
   padding-top: 9px;
+  float: left;
+  font-size: 1.7em;
   text-transform: uppercase;
+  margin-right: 4px;
   &:hover {
     color: #fff;
     text-decoration: none;
@@ -164,7 +184,6 @@ p {
   height: 40px;
   margin: 5px;
 }
-
 
 /* -------------------- FOOTER -------------------- */
 
@@ -349,7 +368,7 @@ input {
   color: #fff;
   background-color: $theme-color;
   border-color: #0a5032;
-  transition: background-color .3s;
+  transition: all .3s;
   &:hover {
     background-color: $theme-color-dark !important;
   }
@@ -461,7 +480,7 @@ span.picture {
   height: 111px;
   padding: 0 5px;
   opacity: 0.6;
-  transition: opacity .3s;
+  transition: all .2s;
   &:hover {
     opacity: 1;
   }
@@ -572,8 +591,14 @@ span.picture {
   margin: 5px;
 }
 
-.btn-signup {
+.btn-signup, .btn-login, .btn-grunt {
   font-size: 1em;
+  transition: all .3s;
+  &:hover {
+    background-color: $theme-color-dark !important;
+    padding: 10px 18px;
+    font-size: 1.2em;
+  }
 }
 
 
@@ -799,7 +824,6 @@ span.picture {
   .btn-signup {
     font-size: 24px;
   }
-
 
   /* ----------------- USERS ------------------ */
 
