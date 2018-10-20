@@ -194,8 +194,9 @@ p {
 #logo img {
   display: block;
   float: left;
-  height: 40px;
+  max-height: 40px;
   margin: 5px;
+  transition: all .3s;
 }
 
 .menu-nav-scroll {

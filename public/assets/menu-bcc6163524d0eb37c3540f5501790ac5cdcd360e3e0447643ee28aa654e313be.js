@@ -23,3 +23,4 @@ function scrollFunction() {
     document.getElementById("alpha-menu").style.marginLeft = "0px";
   }
 }
+;
