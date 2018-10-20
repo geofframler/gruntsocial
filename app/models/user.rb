@@ -52,6 +52,16 @@ class User < ApplicationRecord
     BCrypt::Password.new(digest).is_password?(token)
   end
 
+  # Validates password complexity.
+  def password_complexity
+    if password.present?
+      if !password.match(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])/)
+        errors.add :password, "complexity not met, must contain at least
+                               1 uppercase, 1 lowercase, and 1 number."
+      end
+    end
+  end
+
   # Sends activation email.
   def send_activation_email
     UserMailer.account_activation(self).deliver_now
@@ -69,7 +79,7 @@ class User < ApplicationRecord
                    reset_sent_at: Time.zone.now)
   end
 
-  # Send password reset email.
+  # Sends password reset email.
   def send_password_reset_email
     UserMailer.password_reset(self).deliver_now
   end
@@ -100,16 +110,6 @@ class User < ApplicationRecord
   # Returns true if the current user is following the other user.
   def following?(other_user)
     following.include?(other_user)
-  end
-
-  # Validates password complexity.
-  def password_complexity
-    if password.present?
-      if !password.match(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])/)
-        errors.add :password, "complexity not met, must contain at least
-                               1 uppercase, 1 lowercase, and 1 number."
-      end
-    end
   end
 
   private
