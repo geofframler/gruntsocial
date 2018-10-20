@@ -68,10 +68,21 @@ textarea {
   padding: 0 20px 20px;
 }
 
-.col-sm-3 {
-  position: fixed;
+.col-sm-3, .profile-box {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 70px;
   display: block;
   width: 290px;
+  float: left;
+}
+
+.feed-box {
+  margin-top: -302px;
+}
+
+.profile-feed-box {
+  margin-top: -327px;
 }
 
 .col-sm-6 {
@@ -142,6 +153,7 @@ p {
   padding-top: 10px;
   box-shadow: 0px 4px 8px #555;
   border: none;
+  transition: all .3s;
   .navbar-nav > li > a {
       color: #eee;
   }
@@ -149,6 +161,7 @@ p {
 
 .dropdown {
   height: 60px;
+  transition: all .3s;
 }
 
 .dropdown-toggle {
@@ -183,6 +196,10 @@ p {
   float: left;
   height: 40px;
   margin: 5px;
+}
+
+.menu-nav-scroll {
+  height: 20px;
 }
 
 /* -------------------- FOOTER -------------------- */
@@ -386,7 +403,7 @@ input {
   background-color: #999999;
   border-color: #333;
   opacity: .3;
-  content: "Following";
+  t: "Following";
   &:hover {
     background-color: #990000 !important;
     opacity: 1;
@@ -592,15 +609,27 @@ span.picture {
   margin: 5px;
 }
 
-.btn-login, .btn-grunt {
+.btn-login {
   font-size: 1em;
   transition: all .3s;
   transition-origin: 50% 50%;
   &:hover {
     background-color: $theme-color-dark !important;
-    //transform: scale(1);
-    padding: 10px 18px;
-    font-size: 1.2em;
+    transform: scale(1.1);
+    //padding: 6px 18px;
+    //font-size: 1.2em;
+  }
+}
+
+.btn-grunt {
+  font-size: 1em;
+  transition: all .3s;
+  transition-origin: 50% 50%;
+  &:hover {
+    background-color: $theme-color-dark !important;
+    //transform: scale(1.1);
+    //padding: 0px 18px;
+    //font-size: 1.2em;
   }
 }
 
@@ -646,8 +675,8 @@ span.picture {
     display: block;
     float: left;
     width: 100%;
-    position: static;
-    clear: both;
+    //position: static;
+    //clear: both;
     margin: 0px;
     padding: 15px;
     box-shadow: none;
@@ -689,6 +718,7 @@ span.picture {
     }
     .dropdown {
       height: 60px;
+
     }
     .dropdown-toggle {
       height: 62px;
@@ -898,7 +928,7 @@ span.picture {
     color: #fff;
     background-color: $theme-color;
     border-color: #0a5032;
-    transition: background-color .3s;
+    on: background-color .3s;
     font-size: 2em;
     &:hover {
       background-color: $theme-color-dark !important;
