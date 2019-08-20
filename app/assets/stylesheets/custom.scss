@@ -1062,8 +1062,8 @@ span.picture {
 
 }
 
-.btn-white {
-  color: #000 !important;
+.btn-nav-login {
+  color: $theme-color-darker !important;
   background-color: #fff !important;
   border-color: #0a5032 !important;
   transition: all .3s;
@@ -1071,7 +1071,7 @@ span.picture {
     background-color: $theme-color !important;
     color: #fff !important;
   }
-  &:focus, &:active, .active, .open > .dropdown-toggle.btn-primary  {
+  &:focus, &:active, .active, .open > .dropdown-toggle.btn-nav-login  {
     background-color: $theme-color !important;
     color: #fff !important;
   }
