@@ -22,7 +22,9 @@
     </section>
     <% end %>
   </aside>
+  <div class="profile-container"></div>
   <div class="content-box feed-box">
+  <%= render 'layouts/flash' %>
     <% if @user.microposts.any? %>
       <h3>Grunts (<%= @user.microposts.count %>)</h3>
       <ol class="microposts">
