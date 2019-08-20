@@ -682,6 +682,10 @@ span.picture {
     background-color: white;
   }
 
+  .jumbotron {
+    margin-top: -30px;
+  }
+
   .jumbotron h2 {
     font-size: 2em;
   }
@@ -1127,7 +1131,17 @@ span.picture {
     margin: 20px auto;
   }
 
-  
+  h1 {
+    font-size: 3em;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    text-align: center;
+    sup {
+      font-size: .7em;
+      margin: 0 5px;
+    }
+  }
 
 }
 
