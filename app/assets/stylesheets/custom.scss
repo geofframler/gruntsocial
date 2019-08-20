@@ -613,10 +613,10 @@ span.picture {
 .btn-login {
   font-size: 1em;
   transition: all .3s;
-  transition-origin: 50% 50%;
+  //transition-origin: 50% 50%;
   &:hover {
     background-color: $theme-color-dark !important;
-    transform: scale(1.1);
+    //transform: scale(1.1);
     //padding: 6px 18px;
     //font-size: 1.2em;
   }
@@ -655,7 +655,7 @@ span.picture {
 
 // @media only screen and (max-width: 768px) {
 
-  @media only screen and (max-width: 1px) {
+  @media only screen and (max-width: 768px) {
 
   /* ----------------- UNIVERSAL ------------------ */
   body {
@@ -675,7 +675,7 @@ span.picture {
     background-color: white !important;
     display: block;
     float: left;
-    //width: 100%;
+    width: 100%;
     //position: static;
     //clear: both;
     margin: 0px;
@@ -700,6 +700,11 @@ span.picture {
 
 
   /* ----------------- HEADER ------------------ */
+
+  .navbar-inverse {
+    opacity: 1 !important;
+    margin-bottom: 0;
+  }
 
   .navbar.navbar-inverse .dropdown-menu,
   .navbar.navbar-inverse .dropdown-menu > li {
@@ -727,6 +732,68 @@ span.picture {
     }
   }
 
+/* -------------------- HEADER -------------------- */
+
+.navbar-inverse {
+  background-color: #12905a;
+  height: 40px;
+  padding-top: 0px;
+  box-shadow: 0px 4px 8px #555;
+  border: none;
+  transition: all .3s;
+  .navbar-nav > li > a {
+      color: #eee;
+  }
+}
+
+.dropdown {
+  height: 60px;
+  transition: all .3s;
+}
+
+.dropdown-toggle {
+  height: 60px;
+  margin-top: 0px;
+}
+
+#logotext, #alpha-menu {
+  color: #fff;
+  font-size: 1.5em;
+  float: left;
+  font-weight: bold;
+  letter-spacing: -1px;
+  margin-right: 10px;
+  padding-top: 15px;
+}
+
+#logotext {
+  padding-top: 9px;
+  float: left;
+  font-size: 0px;
+  text-transform: uppercase;
+  margin-right: 4px;
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+#logo img {
+  display: block;
+  float: left;
+  max-height: 40px;
+  margin: 5px;
+  transition: all .3s;
+}
+
+.menu-nav-scroll {
+  height: 20px;
+}
+
+
+
+
+
 
   /* ------------------ FOOTER ------------------ */
 
@@ -737,12 +804,26 @@ span.picture {
 
   /* ----------------- SIDEBAR ----------------- */
 
+  .profile-box {
+    width: 100%;
+    z-index: 50;
+    margin-top: -20px;
+    margin-left: -10px;
+    position: fixed;
+    box-shadow: 0px 4px 8px #555;
+  }
+
+  .feed-box {
+    max-width: 100%;
+    margin-top: 200px;
+  }
+
   aside {
     section.user_info {
-      margin-top: 20px;
-      width: 100%;
-      height: 100%;
+      //margin-top: 20px;
+      margin-left: 25px;
       text-align: center;
+      float: left;
     }
     section {
       margin-top: 20px;
@@ -757,7 +838,7 @@ span.picture {
         margin-bottom: 3px;
       }
       h1 {
-        font-size: 3em;
+        font-size: 2em;
         letter-spacing: -1px;
         margin-top: 0px;
         margin-bottom: 3px;
@@ -768,7 +849,7 @@ span.picture {
       .gravatar, .gravatar_profile .gravatar {
         float: none;
         margin-bottom: 15px;
-        width: 150px;
+        width: 100px;
         border-width: 4px;
       }
       .profile_link_view, .profile_link_edit {
@@ -776,7 +857,8 @@ span.picture {
         display: block;
         text-align: center;
         clear: both;
-        font-size: 2em;
+        font-size: 1em;
+        display: none;
       }
     }
     textarea, input[type=text] {
@@ -787,6 +869,7 @@ span.picture {
       width: 60%;
       margin-left: 20%;
       margin-right: 20%;
+      margin-top: 20px;
     }
     .btn-primary {
       width: 60%;
@@ -804,16 +887,19 @@ span.picture {
 
   .stats {
     display: block;
-    margin: 10px auto 0;
+    margin: 0px auto 0;
+    margin-left: 5px;
     overflow: auto;
     padding: 0;
     text-align: center;
+    float: left;
+    clear: both;
     a {
       border-left: 1px solid $gray-lighter;
       color: #777;
       float: left;
       padding: 0 10px;
-      font-size: 1.6em;
+      font-size: 1.5em;
       &:first-child {
         border: 0;
         padding-left: 0;
@@ -941,6 +1027,16 @@ span.picture {
 
 
   /* -------------- MISCELLANEOUS -------------- */
+
+  .alert-warning, .alert-success {
+    margin-top: 230px;
+    margin-bottom: -210px;
+    z-index: 100;
+  }
+
+  .user_avatars {
+    display: none;
+  }
 
   .accordion {
     font-size: 36px;
