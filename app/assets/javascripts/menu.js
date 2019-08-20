@@ -1,6 +1,6 @@
 window.onscroll = function() {scrollFunction()};
 
-if($(window).width() >= 769){
+if($(window).width() >= 1081){
   function scrollFunction() {
     if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
       document.getElementById("navbar").style.height = "40px";
