@@ -688,6 +688,7 @@ span.picture {
 
   .jumbotron h2 {
     font-size: 2em;
+    line-height: 1.3;
   }
 
   .content-box {
@@ -698,6 +699,10 @@ span.picture {
     width: 100%;
     margin: 0 0 0 0;
     padding: 0 10px 0 10px;
+  }
+
+  .loginbox {
+    font-size: 1.5em !important;
   }
 
 
@@ -838,6 +843,7 @@ span.picture {
 
   footer {
       background-color: white;
+      display: none;
   }
 
 
