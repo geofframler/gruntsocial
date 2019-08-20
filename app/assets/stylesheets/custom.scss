@@ -648,7 +648,7 @@ span.picture {
   display: none;
 }
 
-.alert-warning, .alert-success {
+.alert-warning, .alert-success, .alert-danger, .alert-info {
   margin-top: 10px;
   margin-bottom: 20px;
   font-size: 1em;
@@ -1092,7 +1092,7 @@ span.picture {
     height: 170px;
   }
 
-  .alert-warning, .alert-success {
+  .alert-warning, .alert-success, .alert-danger, .alert-info {
     margin-top: 10px;
     margin-bottom: 0px;
     font-size: 2em;
