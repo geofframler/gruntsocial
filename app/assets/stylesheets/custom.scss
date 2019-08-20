@@ -898,7 +898,7 @@ span.picture {
 
   .stats {
     display: block;
-    margin: 0px 0 0 7%;
+    margin: 0px 0 0 6.8%;
     overflow: hidden;
     padding: 0;
     text-align: center;
@@ -1058,4 +1058,19 @@ span.picture {
     margin: 20px auto;
   }
 
+}
+
+.btn-white {
+  color: #000;
+  background-color: #fff;
+  border-color: #0a5032;
+  transition: all .3s;
+  &:hover {
+    background-color: $theme-color !important;
+    color: #fff;
+  }
+  &:focus, &:active, .active, .open > .dropdown-toggle.btn-primary  {
+    background-color: $theme-color !important;
+    color: #fff;
+  }
 }
