@@ -33,7 +33,7 @@
                         class: 'text-center') %>                    
     <% else %>
       <% if current_user == @user %>
-        <p>Start following <%= link_to "users", users_url %> to develop your own social network!</p>
+        <p class="users" style="margin: 0 2px;">Start following <%= link_to "users", users_url %> to develop your own social network!</p>
       <% else %>
         <p><%= @user.name %> has not started this social activity, follow them to help them get started!</p>
         <div class="center">
