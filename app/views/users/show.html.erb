@@ -36,11 +36,11 @@
     <% else %>
       <% if current_user == @user %>
         <h3>Grunts (0)</h3>
-        <p>You have not Grunted yet! Get started with the form on the left.</p>
-        <p>And while you're at it, why not follow some other <%= link_to "users", users_url %> to view their Grunts on the homepage too?!</p>
+        <p class="havent-grunted">You have not Grunted yet! Get started with the form on the left.</p>
+        <p class="havent-grunted">And while you're at it, why not follow some other <%= link_to "users", users_url %> to view their Grunts on the homepage too?!</p>
       <% else %>
         <h3>Grunts (0)</h3>
-        <p><%= @user.name %> has not started Grunting yet, follow them to view their posts on the homepage when they do!</p>
+        <p class="havent-grunted"><%= @user.name %> has not started Grunting yet, follow them to view their posts on the homepage when they do!</p>
       <% end %>
     <% end %>
   </div>
