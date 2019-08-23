@@ -23,7 +23,7 @@
       <%= f.submit yield(:button_text), class: "btn btn-primary btn-login" %>
     <% end %>
     <div class="gravatar_edit">
-    <%= gravatar_tag(@user) %>
+    <%= gravatar_tag(@user.email) %>
       <a href="http://gravatar.com/emails" target="_blank">Change</a>
     </div>
   </div>

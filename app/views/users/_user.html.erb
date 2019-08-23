@@ -16,7 +16,7 @@
       <% end %>
     </div>
   <% end %>
-  <%= link_to gravatar_tag(user), user %>
+  <%= link_to gravatar_tag(user.email), user %>
   <%= link_to user.name, user %>
   <% if current_user.admin? && !current_user?(user) %>
     | <%= link_to "Delete", user, method: :delete,

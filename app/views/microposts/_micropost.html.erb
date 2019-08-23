@@ -7,7 +7,7 @@
       <% end %>
     <% end %>
   </div>
-  <%= link_to gravatar_tag(micropost.user), micropost.user %>
+  <%= link_to gravatar_tag(micropost.user.email), micropost.user %>
   <span class="user"><%= link_to micropost.user.name, micropost.user %></span>
   <span class="content">
     <%= micropost.content %>
