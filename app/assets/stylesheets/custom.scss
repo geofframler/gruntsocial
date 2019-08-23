@@ -676,6 +676,25 @@ span.picture {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ------------------------------------------------------------------- */
 /* ------------------------------------------------------------------- */
 /* ----------------------------- MOBILE ------------------------------ */
@@ -809,64 +828,61 @@ span.picture {
     }
   }
 
-    
-/* -------------------- HEADER -------------------- */
-
-.navbar-inverse {
-  background-color: #12905a;
-  height: 40px;
-  padding-top: 0px;
-  box-shadow: 0px 4px 8px #555;
-  border: none;
-  transition: all .3s;
-  .navbar-nav > li > a {
-      color: #eee;
+  .navbar-inverse {
+    background-color: #12905a;
+    height: 40px;
+    padding-top: 0px;
+    box-shadow: 0px 4px 8px #555;
+    border: none;
+    transition: all .3s;
+    .navbar-nav > li > a {
+        color: #eee;
+    }
   }
-}
 
-.dropdown {
-  height: 60px;
-  transition: all .3s;
-}
+  .dropdown {
+    height: 60px;
+    transition: all .3s;
+  }
 
-.dropdown-toggle {
-  height: 60px;
-  margin-top: 0px;
-}
+  .dropdown-toggle {
+    height: 60px;
+    margin-top: 0px;
+  }
 
-#logotext, #alpha-menu {
-  color: #fff;
-  font-size: 1.5em;
-  float: left;
-  font-weight: bold;
-  letter-spacing: -1px;
-  margin-right: 10px;
-  padding-top: 15px;
-}
-
-#logotext {
-  padding-top: 9px;
-  float: left;
-  font-size: 0px;
-  text-transform: uppercase;
-  margin-right: 4px;
-  &:hover {
+  #logotext, #alpha-menu {
     color: #fff;
-    text-decoration: none;
+    font-size: 1.5em;
+    float: left;
+    font-weight: bold;
+    letter-spacing: -1px;
+    margin-right: 10px;
+    padding-top: 15px;
   }
-}
 
-#logo img {
-  display: block;
-  float: left;
-  max-height: 40px;
-  margin: 5px;
-  transition: all .3s;
-}
+  #logotext {
+    padding-top: 9px;
+    float: left;
+    font-size: 0px;
+    text-transform: uppercase;
+    margin-right: 4px;
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
 
-.menu-nav-scroll {
-  height: 20px;
-}
+  #logo img {
+    display: block;
+    float: left;
+    max-height: 40px;
+    margin: 5px;
+    transition: all .3s;
+  }
+
+  .menu-nav-scroll {
+    height: 20px;
+  }
 
 
 
@@ -877,6 +893,7 @@ span.picture {
 
   footer {
       background-color: white;
+      padding: 0 4%;
       //display: none;
   }
 
