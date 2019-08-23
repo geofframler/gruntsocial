@@ -11,7 +11,15 @@
 <% end %>
 
 <script type="text/javascript"> 
-  $("#preventnewline").keyup(function() {
-    $("#gruntcounter").text((14 - $(this).val().length) + " characters left");
+  $("#preventnewline").keyup(function() {  
+  $("#gruntcounter").text((14 - $(this).val().length) + " characters left");
+  });
+
+  var $input = $('#preventnewline')
+  $input.keyup(function(e) {
+    var max = 14;
+    if ($input.val().length > max) {
+        $input.val($input.val().substr(0, max));
+    }
   });
 </script>
