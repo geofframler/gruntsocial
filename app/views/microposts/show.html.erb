@@ -2,7 +2,7 @@
 <div class="row">
   <aside class="col-sm-3 content-box">
     <section class="user_info">
-    <%= link_to gravatar_tag(@user), @user %>
+    <%= link_to gravatar_tag(@user.email), @user %>
       <h1><%= @user.name %></h1>
       <div class="profile_link_view"><%= link_to "View Profile", @user %></div>
       <div class="profile_link_view"><b>Grunts:</b> <%= @user.microposts.count %></div>
@@ -12,7 +12,7 @@
       <% if @users.any? %>
         <div class="user_avatars">
           <% @users.each do |user| %>
-            <%= link_to gravatar_tag(user), user %>
+            <%= link_to gravatar_tag(user.email), user %>
           <% end %>
         </div>
       <% end %>
