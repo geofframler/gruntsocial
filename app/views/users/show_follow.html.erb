@@ -22,7 +22,9 @@
 
     <div class="mobile-center">
     <section class="user_info">
-    <div class="gravatar_wrapper"><%= link_to gravatar_for(@user, size: 150), @user %></div>
+    <div class="gravatar_wrapper">
+    <%= link_to gravatar_tag(@user, :html => { :class => "gravatar" }), @user %>
+    </div>
       <h1><div class="gravatar_wrapper"><%= link_to @user.name, @user %></div></h1>
       
       <div class="profile_link_view"><b>Grunts:</b> <%= @user.microposts.count %></div>
@@ -33,7 +35,7 @@
       <% if @users.any? %>
         <div class="user_avatars">
           <% @users.each do |user| %>
-            <%= link_to gravatar_for(user, size: 30), user %>
+            <%= link_to gravatar_tag(user, size: 30, :html => { :class => "gravatar" }), user %>
           <% end %>
         </div>
       <% end %>
