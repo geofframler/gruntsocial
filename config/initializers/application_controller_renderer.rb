@@ -6,3 +6,9 @@
 #     https: false
 #   )
 # end
+
+#Gravatarify.options[:default] = Proc.new do |options, object|
+#    "/grog.png"
+#  end
+
+Gravatarify.options[:default] = "https://grunt.social/grog.png"

@@ -21,7 +21,7 @@ gem 'capistrano-rails'
 gem 'capistrano-bundler'
 gem 'unicorn'
 gem 'material_icons'
-gem 'gravatar_image_tag'
+gem 'gravatarify',             '~> 3.0.0'
 
 group :development, :test do
   gem 'sqlite3', '1.3.13'
