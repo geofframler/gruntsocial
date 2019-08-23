@@ -8,10 +8,10 @@ module UsersHelper
   end
 
   #def gravatar_for(user, options = {})
-  #options = { :size => 50 }.merge(options)
-  #options[:default] = image_tag("default_gravatar_#{options[:size]}.png
+  #options = { :size => 150 }.merge(options)
+  #options[:default] = image_tag("/grog.png")
   #gravatar_image_tag(user.email.downcase,
-  #                   :alt => user.full_name,
+  #                   :alt => user.name,
   #                   :class => 'gravatar',
   #                   :gravatar => options)
   #end
