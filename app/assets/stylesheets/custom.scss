@@ -363,8 +363,12 @@ input {
   color: red;
   ul {
     color: red;
-    margin: 0 0 30px 0;
+    margin: 0 0 20px 0;
   }
+}
+
+.signup-flash {
+  //margin-top: -40px;
 }
 
 .field_with_errors {
@@ -522,6 +526,7 @@ span.picture {
 }
 
 .loginbox {
+  padding-top: 25px;
   padding-bottom: 5px;
 }
 
@@ -530,8 +535,7 @@ span.picture {
 }
 
 .signup_alert {
-  margin-top: 30px;
-  margin-bottom: -30px;
+  margin-top: -10px;
 }
 
 .follow_right {
@@ -675,8 +679,9 @@ span.picture {
   display: none;
 }
 
-
-
+.log-in-flash {
+  margin-top: -10px;
+}
 
 
 
@@ -710,6 +715,10 @@ span.picture {
     }
     .desktop-hidden {
       //display: inline;
+    }
+
+    .signup-link {
+      font-size: 1em;
     }
 
     .bigger-text {
@@ -747,7 +756,7 @@ span.picture {
   .container {
     width: 100%;
     margin: 0 0 0 0;
-    padding: 0 10px 0 10px;
+    padding: 0 10px 0 0px;
   }
 
   .loginbox {
@@ -1162,6 +1171,16 @@ span.picture {
     margin-top: 10px;
     margin-bottom: 0px;
     font-size: 2em;
+  }
+
+  .log-in-flash {
+    font-size: .5em ;
+    margin-bottom: 20px;
+  }
+
+  .signup-flash {
+    font-size: 1em ;
+    margin-bottom: 20px;
   }
 
   .all-users-paginate {
