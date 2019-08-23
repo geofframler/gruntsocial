@@ -3,21 +3,15 @@
   <div class="field">
     <%= f.text_field :content, id: "preventnewline", maxlength: "14", placeholder: "Compose Grunt" %>
   </div>
+  <p id="gruntcounter">14 characters left</p>
   <%= f.submit "Grunt", class: "btn btn-primary btn-grunt" %>
   <span class="picture" style="display:none;">
     <%= f.file_field :picture, accept: 'image/jpeg,image/gif,image/png' %>
   </span>
 <% end %>
 
-<script type="text/javascript">
+<script type="text/javascript"> 
   $("#preventnewline").keyup(function() {
-    #(this).val( $(this).val().replace( /\r?\n/gi, '' ) );
-  });
-
-  $('#micropost_picture').bind('change', function() {
-    var size_in_megabytes - this.files[0].size/1024/1024;
-    if (size_in_megabytes > 5) {
-      alert('Maximum file size is 5MB. Please choose a smaller file.')
-    }
+    $("#gruntcounter").text((14 - $(this).val().length) + " characters left");
   });
 </script>
