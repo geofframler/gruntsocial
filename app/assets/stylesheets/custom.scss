@@ -644,18 +644,37 @@ span.picture {
   }
 }
 
-.profile-container {
-  display: none;
-}
-
 .alert-warning, .alert-success, .alert-danger, .alert-info {
   margin-top: 10px;
   margin-bottom: 20px;
   font-size: 1em;
 }
 
+.btn-nav-login {
+  color: $theme-color-darker !important;
+  background-color: #fff !important;
+  border-color: #0a5032 !important;
+  transition: all .3s;
+  &:hover {
+    background-color: $theme-color !important;
+    color: #fff !important;
+  }
+  &:focus, &:active, .active, .open > .dropdown-toggle.btn-nav-login  {
+    background-color: $theme-color !important;
+    color: #fff !important;
+  }
+}
 
 .menu-mobile {display: none;}
+
+.users_follow_right {
+  display: none;
+}
+
+.desktop-hidden {
+  display: none;
+}
+
 
 /* ------------------------------------------------------------------- */
 /* ------------------------------------------------------------------- */
@@ -667,6 +686,13 @@ span.picture {
 
   @media only screen and (max-width: 991px) {
 
+    .mobile-hidden {
+      display: none;
+    }
+    .desktop-hidden {
+      //display: inline;
+    }
+
     .bigger-text {
       font-size: 2em !important;
     }
@@ -675,6 +701,10 @@ span.picture {
   .menu-mobile {
     display: block;
     margin-top: -10px;
+  }
+
+  .mobile-row {
+    padding-top: 180px;
   }
 
   /* ----------------- UNIVERSAL ------------------ */
@@ -847,7 +877,7 @@ span.picture {
 
   footer {
       background-color: white;
-      display: none;
+      //display: none;
   }
 
 
@@ -963,6 +993,13 @@ span.picture {
   }
 
   #follow-form {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    display: block;
+  }
+
+  .users_follow_right {
     position: absolute;
     top: 25px;
     right: 20px;
@@ -1088,18 +1125,20 @@ span.picture {
 
   .mobile-center {
     padding-left: 0;
-    transform: translateX(27%);
+    //transform: translateX(27%);
     text-align: center;
-  }
+    }
+
+    p {
+      font-size: .6em;
+    }
+
+    button.accordion {
+      font-size: 1em;
+    }
 
   .pagination-size {
     font-size: .5em;
-  }
-
-  .profile-container {
-    display: inline-block;
-    width: 100%;
-    height: 170px;
   }
 
   .alert-warning, .alert-success, .alert-danger, .alert-info {
@@ -1108,9 +1147,18 @@ span.picture {
     font-size: 2em;
   }
 
-  .all-users-flash {
+  .all-users-paginate {
     font-size: .5em !important;
   }
+
+  .profile-paginate {
+    font-size: 1.5em !important;
+  }
+
+  .all-users-flash {
+    font-size: .3em !important;
+  }
+
 
   .user-flash {
     font-size: .3em;
@@ -1125,7 +1173,7 @@ span.picture {
   }
 
   .homepage-pagination {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   .user_avatars {
@@ -1155,21 +1203,4 @@ span.picture {
   }
 
 }
-
-.btn-nav-login {
-  color: $theme-color-darker !important;
-  background-color: #fff !important;
-  border-color: #0a5032 !important;
-  transition: all .3s;
-  &:hover {
-    background-color: $theme-color !important;
-    color: #fff !important;
-  }
-  &:focus, &:active, .active, .open > .dropdown-toggle.btn-nav-login  {
-    background-color: $theme-color !important;
-    color: #fff !important;
-  }
-}
-
-
 

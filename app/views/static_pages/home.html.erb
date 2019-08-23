@@ -1,5 +1,5 @@
 <% if logged_in? %>
-<div class="row">
+<div class="row mobile-row">
   <aside class="content-box profile-box">
     <section class="user_info">
       <%= render 'shared/user_info' %>
@@ -11,7 +11,6 @@
       <%= render 'shared/micropost_form' %>
     </section>
   </aside>
-  <div class="profile-container"></div>
   <div class="content-box feed-box">
   <%= render 'layouts/flash' %>
     <h3>Grunt Feed</h3>

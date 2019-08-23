@@ -3,17 +3,20 @@
 <h1>All Users</h1>
 <div class="row">
   <div class="col-md-6 col-md-offset-3 content-box">
-  <div class="all-users-flash">
-  <%= will_paginate(renderer: WillPaginate::ActionView::Bootstrap4LinkRenderer,
+  
+  <div class="all-users-paginate">
+    <%= will_paginate(renderer: WillPaginate::ActionView::Bootstrap4LinkRenderer,
                       class: 'text-center') %>
-    <%= render 'layouts/flash' %></div>
+  </div>
+    <div class="all-users-flash"><%= render 'layouts/flash' %></div>
     <ul class="users">
       <% @users.each do |user| %>
         <%= render user %>
       <% end %>
     </ul>
-
+    <div class="all-users-paginate">
     <%= will_paginate(renderer: WillPaginate::ActionView::Bootstrap4LinkRenderer,
                       class: 'text-center') %>
+    </div>
   </div>
 </div>

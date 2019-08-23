@@ -1,13 +1,33 @@
 <% provide(:title, @title) %>
-<div class="row">
+<div class="row mobile-row">
   <aside class="content-box profile-box">
+
+  <% unless current_user?(@user) %>
+  <div class="users_follow_right <%= "users-follow-form-#{@user.id}" %>"
+                            data-user_id="<%= "#{@user.id}" %>"
+                            id="<%= "users-follow-form-#{@user.id}" %>">
+    <% if current_user.following?(@user) %>
+      <%= form_for(current_user.active_relationships.find_by(followed_id: @user.id),
+                html: { method: :delete }) do |f| %>
+        <%= f.submit "Unfollow", class: "btn btn-primary btn-unfollow" %>
+      <% end %>
+    <% else %>
+      <%= form_for(current_user.active_relationships.build) do |f| %>
+        <div><%= hidden_field_tag :followed_id, @user.id %></div>
+        <%= f.submit "Follow", class: "btn btn-primary btn-follow" %>
+      <% end %>
+    <% end %>
+  </div>
+<% end %>
+
     <div class="mobile-center">
     <section class="user_info">
-      <%= gravatar_for @user %>
-      <h1><%= @user.name %></h1>
-      <div class="profile_link_view"><%= link_to "View Profile", @user %></div>
+    <div class="gravatar_wrapper"><%= link_to gravatar_for(@user, size: 150), @user %></div>
+      <h1><div class="gravatar_wrapper"><%= link_to @user.name, @user %></div></h1>
+      
       <div class="profile_link_view"><b>Grunts:</b> <%= @user.microposts.count %></div>
     </section>
+
     <section class="stats">
       <%= render 'shared/stats' %>
       <% if @users.any? %>
@@ -20,7 +40,6 @@
     </section>
     </div>
   </aside>
-  <div class="profile-container"></div>
   <div class="content-box feed-box bigger-text">
   <div class="user-flash"><%= render 'layouts/flash' %></div>
     <h3><%= @title %></h3>
