@@ -4,13 +4,14 @@
   </small>
   <nav>
     <ul>
+      <li><%= link_to "Help",   help_path %></li>
       <li><%= link_to "About",   about_path %></li>
       <li><%= link_to "Contact", contact_path %></li>
-      <li><%= link_to "Ruby on Rails", 'http://rubyonrails.org/',
+      <li class="mobile-hidden"><%= link_to "Ruby on Rails", 'http://rubyonrails.org/',
                                         target: :_blank %></li>
-      <li><%= link_to "Bootstrap", 'https://getbootstrap.com/',
+      <li class="mobile-hidden"><%= link_to "Bootstrap", 'https://getbootstrap.com/',
                                         target: :_blank %>
-      <li><%= link_to "Sass", 'http://sass-lang.com/',
+      <li class="mobile-hidden"><%= link_to "Sass", 'http://sass-lang.com/',
                                         target: :_blank %>
     </ul>
   </nav>
