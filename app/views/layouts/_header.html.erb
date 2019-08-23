@@ -5,8 +5,9 @@
     <sup><div id="alpha-menu">α</div></sup>
     <nav class="menu-desktop">
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home",  root_path%></li>
+        
         <% if logged_in? %>
+          <li><%= link_to "Home",  root_path%></li>
           <li><%= link_to "Users", users_path %></li>
           <li id="dropdown" class="dropdown">
             <a href="#" id="dropdown-toggle" class="dropdown-toggle" data-toggle="dropdown">
@@ -22,7 +23,7 @@
             </ul>
           </li>
         <% else %>
-          <li><%= link_to "Log In", login_path %></li>
+          <li><%= link_to '<button class="btn btn-nav-login">Log In</button>'.html_safe, login_path %></li>
         <% end %>
       </ul>
     </nav>
