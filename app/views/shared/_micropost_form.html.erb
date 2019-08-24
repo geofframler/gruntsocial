@@ -1,7 +1,7 @@
 <%= form_for(@micropost) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   <div class="field">
-    <%= f.text_field :content, id: "preventnewline", maxlength: "14", placeholder: "Compose Grunt" %>
+    <%= f.text_field :content, id: "gruntinput", maxlength: "14", placeholder: "Compose Grunt", autocomplete: "off" %>
   </div>
   <p id="gruntcounter">14 characters left</p>
   <%= f.submit "Grunt", class: "btn btn-primary btn-grunt" %>
@@ -11,15 +11,17 @@
 <% end %>
 
 <script type="text/javascript"> 
-  $("#preventnewline").keyup(function() {  
-  $("#gruntcounter").text((14 - $(this).val().length) + " characters left");
-  });
-
-  var $input = $('#preventnewline')
-  $input.keyup(function(e) {
-    var max = 14;
-    if ($input.val().length > max) {
-        $input.val($input.val().substr(0, max));
-    }
-  });
+var $input =   $('#gruntinput')
+var $counter = $('#gruntcounter')
+$input.keyup(function() {
+  var max = 14;
+  if ($input.val().length < max - 1) {
+    $counter.html((max - $(this).val().length) + " characters left");
+  } else if ($input.val().length == max - 1 ) {  
+    $counter.html("1 character left");
+  } else if ($input.val().length >= max ) {
+    $input.val($input.val().substr(0, max));
+    $counter.html("<p style='color:red;'>0 characters left</p>");
+  }
+});
 </script>
