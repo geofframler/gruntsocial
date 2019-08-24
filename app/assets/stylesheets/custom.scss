@@ -660,11 +660,11 @@ span.picture {
   border-color: #0a5032 !important;
   transition: all .3s;
   &:hover {
-    background-color: $theme-color !important;
+    background-color: $theme-color-darker !important;
     color: #fff !important;
   }
   &:focus, &:active, .active, .open > .dropdown-toggle.btn-nav-login  {
-    background-color: $theme-color !important;
+    background-color: $theme-color-darker !important;
     color: #fff !important;
   }
 }
