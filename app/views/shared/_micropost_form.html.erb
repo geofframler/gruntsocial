@@ -13,15 +13,16 @@
 <script type="text/javascript"> 
 var $input =   $('#gruntinput')
 var $counter = $('#gruntcounter')
-$input.keyup(function() {
+var updateCounterText = function() {
   var max = 14;
   if ($input.val().length < max - 1) {
     $counter.html((max - $(this).val().length) + " characters left");
   } else if ($input.val().length == max - 1 ) {  
     $counter.html("1 character left");
-  } else if ($input.val().length >= max ) {
+  } else {
     $input.val($input.val().substr(0, max));
-    $counter.html("<p style='color:maroon;'>0 characters left</p>");
+    $counter.html("<p style='color:maroon;'>0 characters left</span>");
   }
-});
+}
+$input.bind("change keyup input", updateCounterText);
 </script>
