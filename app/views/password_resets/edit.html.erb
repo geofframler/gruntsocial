@@ -2,7 +2,7 @@
 <h1>Reset Password</h1>
 
 <div class="row">
-  <div class="col-sm-3 col-md-offset-4 content-box">
+  <div class="col-md-4 col-md-offset-4 content-box loginbox">
     <%= form_for(@user, url: password_reset_path(params[:id])) do |f| %>
       <%= render 'shared/error_messages', object: f.object %>
 
@@ -14,7 +14,7 @@
       <%= f.label :password_confirmation, "Confirm New Password" %>
       <%= f.password_field :password_confirmation, class: 'form-control' %>
       <br>
-      <%= f.submit "Update Password", class: "btn btn-primary" %>
+      <%= f.submit "Update Password", class: "btn btn-primary btn-login", style: "margin-bottom: 20px;" %>
     <% end %>
   </div>
 </div>
