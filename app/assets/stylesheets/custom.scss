@@ -515,6 +515,9 @@ span.picture {
   img {
     height: 100px;
   }
+  h2 {
+    font-size: 1.8em;
+  }
 }
 
 .debug_dump {
@@ -639,7 +642,7 @@ span.picture {
 }
 
 .btn-signup {
-  font-size: 1em;
+  font-size: 1.5em;
   transition: all .3s;
   transition-origin: 50% 50%;
   &:hover {
@@ -760,7 +763,7 @@ span.picture {
   }
 
   .jumbotron h2 {
-    font-size: 2em;
+    font-size: 1.6em;
     line-height: 1.3;
   }
 
@@ -1239,6 +1242,10 @@ span.picture {
     width: 30%;
     height: auto;
     margin: 20px auto;
+  }
+
+  .powered-text {
+    font-size: 1em;
   }
 
   h1 {
