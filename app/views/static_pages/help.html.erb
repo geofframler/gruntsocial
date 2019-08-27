@@ -6,63 +6,139 @@
     <button class="accordion">Signing Up</button>
       <div class="panel">
         <p>
-
+          From the <%= link_to "Home Page", root_path %> click the button that says <%= link_to "Sign up now!", signup_path %>
+        </p>
+        <%= image_tag("help/homepage.png", alt: "Home Page", title: "Home Page", class: "help-img-desktop") %>
+        <%= image_tag("help/homepage-mobile.jpg", alt: "Home Page", title: "Home Page", class: "help-img-mobile") %>
+        <p>
+          Fill in your information and click "Create my Account".
+        </p>
+        <%= image_tag("help/signup.png", alt: "Sign Up", title: "Sign Up", class: "help-img-desktop") %>
+        <%= image_tag("help/signup-mobile.jpg", alt: "Sign Up", title: "Sign Up", class: "help-img-mobile") %>
+        <p>
+          Check your email for an activation link. Click on the link to be logged in for the first time! Welcome to Grunt.
         </p>
       </div>
 
     <button class="accordion">Logging In</button>
       <div class="panel">
+        <p class="help-p-desktop">
+          Click the button in the top menu that says <%= link_to "Log In", login_path %>.
+        </p>
+        <p class="help-p-mobile">
+          Tap the button in the top menu that says <%= link_to "Log In", login_path %>.
+        </p>
+        <p class="help-p-desktop">
+          Fill in your email address and password and click "Log In".
+        </p>
+        <p class="help-p-mobile">
+          Fill in your email address and password and tap "Log In".
+        </p>
+        <%= image_tag("help/login.png", alt: "Log In", title: "Log In", class: "help-img-desktop") %>
+        <%= image_tag("help/login-mobile.jpg", alt: "Log In", title: "Log In", alt: "", title: "", class: "help-img-mobile") %>
         <p>
-          
+          Upon successful login you will be taken to your <%= link_to "Feed", root_path %>. Happy Grunting!
         </p>
       </div>
 
     <button class="accordion">Viewing Your Profile</button>
       <div class="panel">
-        <p>
-            
+        <p class="help-p-desktop">
+          While logged in, click "Account" in the top menu and click "<%= link_to "Profile", current_user %>".
         </p>
+        <p class="help-p-mobile">
+          While logged in, click the <%= link_to '<i class="material-icons md-36">account_circle</i>'.html_safe, current_user %> icon in the top menu.
+        </p>
+        <%= image_tag("", alt: "", title: "", class: "help-img-desktop") %>
+        <%= image_tag("", alt: "", title: "", class: "help-img-mobile") %>
       </div>
 
     <button class="accordion">Editing Your Profile</button>
       <div class="panel">
-        <p>
-            
+        <p class="help-p-desktop">
+          While logged in, click "Account" in the top menu and click "Edit Profile".
         </p>
+        <p class="help-p-mobile">
+          While logged in, click the <i class="material-icons md-36">settings</i> icon in the top menu and click "Edit Profile".
+        </p>
+        <%= image_tag("", alt: "", title: "", class: "help-img-desktop") %>
+        <%= image_tag("", alt: "", title: "", class: "help-img-mobile") %>
       </div>
 
     <button class="accordion">Posting a Grunt</button>
       <div class="panel">
-        <p>
-            
-        </p>
+      <p class="help-p-desktop">
+        Go to your <%= link_to "Feed", root_path %> or <%= link_to "Profile", current_user %> and locate the input box labeled "Compose Grunt".
+      </p>
+      <p class="help-p-mobile">
+        Go to your <%= link_to image_tag("icon.png", alt: "Feed"), root_path%><%= link_to "Feed", root_path %> or <%= link_to '<i class="material-icons md-36">account_circle</i>'.html_safe, current_user %><%= link_to "Profile", current_user %> and locate the input box labeled "Compose Grunt".
+      </p>
+      <%= image_tag("", alt: "", title: "", class: "help-img-desktop") %>
+      <%= image_tag("", alt: "", title: "", class: "help-img-mobile") %>
+
+      <p class="help-p-desktop">
+        Click the input box and start typing your Grunt. Note how many characters you have left before you hit the maximum limit.
+      </p>
+      <p class="help-p-mobile">
+        Tap the input box and start typing your Grunt. Note how many characters you have left before you hit the maximum limit.
+      </p>
+      <%= image_tag("", alt: "", title: "", class: "help-img-desktop") %>
+      <%= image_tag("", alt: "", title: "", class: "help-img-mobile") %>
       </div>
 
     <button class="accordion">Deleting a Grunt</button>
       <div class="panel">
-        <p>
-
+        <p class="help-p-desktop">
+          If you're not happy with how your Grunt turned out, that's ok. Anywhere your Grunt is visible you can just click "Delete" after the timestamp to be rid of it.
         </p>
+        <p class="help-p-mobile">
+          If you're not happy with how your Grunt turned out, that's ok. Anywhere your Grunt is visible you can just tap "Delete" after the timestamp to be rid of it.
+        </p>
+        <%= image_tag("", alt: "", title: "", class: "help-img-desktop") %>
+        <%= image_tag("", alt: "", title: "", class: "help-img-mobile") %>
       </div>
 
     <button class="accordion">Viewing All Users</button>
       <div class="panel">
         <p>
-          
+        <p class="help-p-desktop">
+          While logged in, click "<%= link_to "Users", users_path %>" in the top menu.
+        </p>
+        <p class="help-p-mobile">
+          While logged in, click the <%= link_to '<i class="material-icons md-36">people</i>'.html_safe, users_path %> icon in the top menu.
+        </p>
+        <%= image_tag("", alt: "", title: "", class: "help-img-desktop") %>
+        <%= image_tag("", alt: "", title: "", class: "help-img-mobile") %>
         </p>
       </div>
 
     <button class="accordion">Following a Grunter</button>
       <div class="panel">
-        <p>
-
+        <p class="help-p-desktop">
+          Anywhere a Grunter you do not follow is visible, click the "Follow" button next to their name or Grunt.
         </p>
+        <p class="help-p-mobile">
+          Anywhere a Grunter you do not follow is visible, tap the "Follow" button next to their name or Grunt.
+        </p>
+        <%= image_tag("", alt: "", title: "", class: "help-img-desktop") %>
+        <%= image_tag("", alt: "", title: "", class: "help-img-mobile") %>
+        <%= image_tag("", alt: "", title: "", class: "help-img-desktop") %>
+        <%= image_tag("", alt: "", title: "", class: "help-img-mobile") %>
       </div>
 
     <button class="accordion">Unfollowing a Grunter</button>
       <div class="panel">
         <p>
-          
+        <p class="help-p-desktop">
+          Anywhere a Grunter you follow is visible, click the "Unfollow" button next to their name or Grunt.
+        </p>
+        <p class="help-p-mobile">
+          Anywhere a Grunter you follow is visible, tap the "Unfollow" button next to their name or Grunt.
+        </p>
+        <%= image_tag("", alt: "", title: "", class: "help-img-desktop") %>
+        <%= image_tag("", alt: "", title: "", class: "help-img-mobile") %>
+        <%= image_tag("", alt: "", title: "", class: "help-img-desktop") %>
+        <%= image_tag("", alt: "", title: "", class: "help-img-mobile") %>
         </p>
       </div>
 

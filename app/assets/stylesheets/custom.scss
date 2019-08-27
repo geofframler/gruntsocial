@@ -698,8 +698,24 @@ span.picture {
   }
 }
 
+.help-img-desktop {
+  display: block;
+  max-width: 100%;
+  margin: 20px 0 20px 0;
+}
+.help-img-mobile {
+  display: none;
+}
 
-
+.help-p-desktop {
+  display: block;
+  img {
+    height: 30px;
+  }
+}
+.help-p-mobile {
+  display: none;
+}
 
 
 
@@ -725,6 +741,31 @@ span.picture {
     }
     .desktop-hidden {
       //display: inline;
+    }
+
+    .help-img-desktop {
+      display: none;
+    }
+    .help-img-mobile {
+      display: block;
+      max-width: 100%;
+      margin: 20px 0 20px 0;
+
+    }
+    
+    .help-p-desktop {
+      display: none;
+    }
+    .help-p-mobile {
+      display: block;
+      i {
+        position: relative;
+        top: 12px;
+        color: black !important;
+      }
+      img {
+        height: 30px;
+      }
     }
 
     .btn-nav-login {
