@@ -22,6 +22,7 @@ gem 'capistrano-bundler'
 gem 'unicorn'
 gem 'material_icons'
 gem 'gravatarify',             '~> 3.0.0'
+gem 'mail_form'
 
 group :development, :test do
   gem 'sqlite3', '1.3.13'
