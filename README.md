@@ -1,40 +1,66 @@
 # Grunt
 
-### Yet another Microposting Platform, but instead of 140 characters, you get 14.
+#### Yet another Microposting Platform, but instead of 140 characters, you get 14.
 
-### It's a Micro-Microposting Platform. A Micro2posting Platform.
+#### It's a Micro-Microposting Platform. A Micro2posting Platform.
 
-### GET CREATIVE.
+#### GET CREATIVE.
 
 Grunt started as a simple dummy application to gain experience using Ruby on Rails and has since evolved into my ideal form of social media: that which does not allow much commentary.
 
 ## Upcoming Features
 ~~-Account Authentication/Activation~~
+
 ~~-User Profile~~
+
 ~~-Gravatar capabilities~~
+
 ~~-Microposts~~
+
 ~~-User relationships~~
+
 ~~-Layout animations~~
+
 ~~-Mobile styles~~
+
 ~~-Custom input for Grunts with limit restrictions and character counter~~
+
 -Asynchronous follow/unfollow of other users without refreshing the page
+
 -Asynchronous posting without refreshing the page
+
 -User screennames
+
 -Custom url for users based on screenname
+
 -User searching
+
 -Individual micropost pages
+
 -Photo upload and storage using AWS
+
 -Custom uploaded avatars using AWS
+
 -A like system (using ♧ instead of ♡, clubs/caveman)
+
 -A page to store liked posts ("Clubhouse")
+
 -User comments on Grunts
+
 -User tagging on Grunts
+
 -Tags for Grunts
+
 -Notification system
+
 -Encrypted direct messaging
+
 -Emoji picker for desktop
+
 -Expand 14 characters to 28 characters 
+
 -Mobile app using Flutter/Dart and Rails API
+
 
 *Stay tuned for more exciting features!*
 **-Geoff**
