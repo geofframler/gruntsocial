@@ -8,7 +8,7 @@
 
 Grunt started as a simple dummy application to gain experience using Ruby on Rails and has since evolved into my ideal form of social media: that which does not allow much commentary.
 
-**Upcoming Features**
+## Upcoming Features
 ~~-Account Authentication/Activation~~
 ~~-User Profile~~
 ~~-Gravatar capabilities~~
