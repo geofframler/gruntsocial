@@ -1,6 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
 /* -------------- MIXINS/VARIABLES/ETC --------------- */
 
 $theme-color: #14a064;
@@ -203,6 +204,7 @@ p {
   height: 20px;
 }
 
+
 /* -------------------- FOOTER -------------------- */
 
 footer {
@@ -275,7 +277,6 @@ aside {
   border-radius: 30% 10%;
   float: left;
   margin-right: 10px;
-  //width: 60px;
 }
 
 .gravatar_edit {
@@ -326,7 +327,6 @@ aside {
 }
 
 .gravatar_profile .gravatar {
-  //width: 86px;
   border-width: 3px;
 }
 
@@ -343,6 +343,14 @@ aside {
 .profile_link_edit {
   margin-top: -3px;
   margin-left: 92px;
+}
+
+#gruntcounter {
+  margin: -12px 0 6px 6px;
+  p {
+    font-size: 1em;
+    margin-bottom: 0px;
+  }
 }
 
 
@@ -365,10 +373,6 @@ input {
     color: red;
     margin: 0 0 20px 0;
   }
-}
-
-.signup-flash {
-  //margin-top: -40px;
 }
 
 .field_with_errors {
@@ -424,6 +428,7 @@ input {
   width: auto;
 }
 
+
 /* -------------------- USERS -------------------- */
 
 .users {
@@ -437,6 +442,33 @@ input {
     overflow: auto;
     padding: 10px 0;
   }
+}
+
+.user_avatars {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.user_avatars a {
+  border-left: 0px solid $gray-lighter;
+  float: left;
+  padding: 0;
+  font-size: 1.1em;
+}
+
+.user_avatars .gravatar {
+  margin: 5px;
+}
+
+.follow_right {
+  float: right;
+  margin-top: -10px;
+}
+
+.edit_profile_link {
+  font-size: .8em;
 }
 
 
@@ -541,15 +573,6 @@ span.picture {
   margin-top: -10px;
 }
 
-.follow_right {
-  float: right;
-  margin-top: -10px;
-}
-
-.edit_profile_link {
-  font-size: .8em;
-}
-
 .helpbox {
   padding: 0px !important;
 }
@@ -599,33 +622,11 @@ span.picture {
     background-color: white;
 }
 
-.user_avatars {
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-.user_avatars a {
-  border-left: 0px solid $gray-lighter;
-  float: left;
-  padding: 0;
-  font-size: 1.1em;
-}
-
-.user_avatars .gravatar {
-  margin: 5px;
-}
-
 .btn-login {
   font-size: 1em;
   transition: all .3s;
-  //transition-origin: 50% 50%;
   &:hover {
     background-color: $theme-color-dark !important;
-    //transform: scale(1.1);
-    //padding: 6px 18px;
-    //font-size: 1.2em;
   }
 }
 
@@ -635,9 +636,6 @@ span.picture {
   transition-origin: 50% 50%;
   &:hover {
     background-color: $theme-color-dark !important;
-    //transform: scale(1.1);
-    //padding: 0px 18px;
-    //font-size: 1.2em;
   }
 }
 
@@ -690,14 +688,6 @@ span.picture {
   margin-top: -6px;
 }
 
-#gruntcounter {
-  margin: -12px 0 6px 6px;
-  p {
-    font-size: 1em;
-    margin-bottom: 0px;
-  }
-}
-
 .help-img-desktop {
   display: block;
   max-width: 100%;
@@ -720,12 +710,6 @@ span.picture {
 
 
 
-
-
-
-
-
-
 /* ------------------------------------------------------------------- */
 /* ------------------------------------------------------------------- */
 /* ----------------------------- MOBILE ------------------------------ */
@@ -735,64 +719,6 @@ span.picture {
 // @media only screen and (max-width: 768px) {
 
   @media only screen and (max-width: 991px) {
-
-    .mobile-hidden {
-      display: none;
-    }
-    .desktop-hidden {
-      //display: inline;
-    }
-
-    .help-img-desktop {
-      display: none;
-    }
-    .help-img-mobile {
-      display: block;
-      max-width: 100%;
-      margin: 20px 0 20px 0;
-
-    }
-    
-    .help-p-desktop {
-      display: none;
-    }
-    .help-p-mobile {
-      display: block;
-      i {
-        position: relative;
-        top: 12px;
-        color: black !important;
-      }
-      img {
-        height: 30px;
-      }
-    }
-
-    .btn-nav-login {
-      margin-top: 0px;
-    }
-
-    .signup-link {
-      font-size: 1em;
-    }
-
-    .bigger-text {
-      font-size: 2em !important;
-    }
-
-    #gruntcounter {
-      font-size: 1.7em;
-    }
-
-  .menu-desktop {display: none;}
-  .menu-mobile {
-    display: block;
-    margin-top: -10px;
-  }
-
-  .mobile-row {
-    padding-top: 180px;
-  }
 
   /* ----------------- UNIVERSAL ------------------ */
   body {
@@ -834,8 +760,6 @@ span.picture {
     display: block;
     float: left;
     width: 100%;
-    //position: static;
-    //clear: both;
     margin: 0px;
     padding: 15px;
     box-shadow: none;
@@ -951,10 +875,6 @@ span.picture {
   .menu-nav-scroll {
     height: 20px;
   }
-
-
-
-
 
 
   /* ------------------ FOOTER ------------------ */
@@ -1104,8 +1024,6 @@ span.picture {
     width: 80%;
   }
 
-
-
   .user_avatars a {
     border-left: 0px solid $gray-lighter;
     float: left;
@@ -1114,12 +1032,14 @@ span.picture {
   }
 
   .user_avatars .gravatar {
-    //width: 60px;
     display: block;
     margin: 10px;
     padding: 0px;
   }
 
+  #gruntcounter {
+    font-size: 1.7em;
+  }
 
   /* ----------------- FORMS ------------------- */
 
@@ -1135,6 +1055,14 @@ span.picture {
     font-size: 24px;
   }
 
+  .btn-nav-login {
+    margin-top: 0px;
+  }
+
+  .signup-link {
+    font-size: 1em;
+  }
+
   /* ----------------- USERS ------------------ */
 
   .users {
@@ -1147,6 +1075,26 @@ span.picture {
       overflow: auto;
       padding: 25px 0;
     }
+  }
+
+  .all-users-flash {
+    font-size: .3em !important;
+  }
+
+  .user-flash {
+    font-size: .3em;
+  }
+
+  .users {
+    font-size: .6em;
+  }
+
+  .havent-grunted {
+    font-size: 2em;
+  }
+
+  .user_avatars {
+    display: none;
   }
 
 
@@ -1187,7 +1135,6 @@ span.picture {
       float: left;
       margin-right: 15px;
       margin-top: 5px;
-      //width: 90px;
     }
   }
 
@@ -1210,7 +1157,6 @@ span.picture {
 
   .mobile-center {
     padding-left: 0;
-    //transform: translateX(27%);
     text-align: center;
     }
 
@@ -1250,29 +1196,8 @@ span.picture {
     font-size: 1.5em !important;
   }
 
-  .all-users-flash {
-    font-size: .3em !important;
-  }
-
-
-  .user-flash {
-    font-size: .3em;
-  }
-
-  .users {
-    font-size: .6em;
-  }
-
-  .havent-grunted {
-    font-size: 2em;
-  }
-
   .homepage-pagination {
     font-size: 1.5em;
-  }
-
-  .user_avatars {
-    display: none;
   }
 
   .accordion {
@@ -1299,6 +1224,49 @@ span.picture {
       font-size: .7em;
       margin: 0 5px;
     }
+  }
+
+  .mobile-hidden {
+    display: none;
+  }
+
+  .help-img-desktop {
+    display: none;
+  }
+  .help-img-mobile {
+    display: block;
+    max-width: 100%;
+    margin: 20px 0 20px 0;
+
+  }
+  
+  .help-p-desktop {
+    display: none;
+  }
+  .help-p-mobile {
+    display: block;
+    i {
+      position: relative;
+      top: 12px;
+      color: black !important;
+    }
+    img {
+      height: 30px;
+    }
+  }
+
+  .bigger-text {
+    font-size: 2em !important;
+  }
+
+  .menu-desktop {display: none;}
+  .menu-mobile {
+    display: block;
+    margin-top: -10px;
+  }
+
+  .mobile-row {
+    padding-top: 180px;
   }
 
 }
