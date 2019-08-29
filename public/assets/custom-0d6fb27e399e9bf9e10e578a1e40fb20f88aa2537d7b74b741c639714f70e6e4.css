@@ -1,96 +1,3 @@
-/*
- * CSS File of Material icons.
- * CSS code based on:
- * https://google.github.io/material-design-icons/#icon-font-for-the-web
- */
-
-
-
-
-
-
-/* Use the font */
-
-@font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/assets/MaterialIcons-Regular-8c998b4a9c0acbb9fe5dd572c206a5a33fdd5ca2b58db87fc3b893beac85068d.eot'); /* For IE6-8 */
-  src: local('Material Icons'),
-       local('MaterialIcons-Regular'),
-       url('/assets/MaterialIcons-Regular-a87d66c91b2e7dc5530aef76c03bd6a3d25ea5826110bf4803b561b811cc8726.woff2') format('woff2'),
-       url('/assets/MaterialIcons-Regular-c4a1baec300d09e03a8380b85918267ee80faae8e00c6c56b48e2e74b1d9b38d.woff') format('woff'),
-       url('/assets/MaterialIcons-Regular-b7f4a3ab562048f28dd1fa691601bc43363a61d0f876d16d8316c52e4f32d696.ttf') format('truetype');
-}
-
-/* Base class */
-.material-icons,
-.mi {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  line-height: 1;
-  text-transform: none;
-
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-  /* Support for IE. */
-  font-feature-settings: 'liga';
-}
-
-/* Rules for sizing the icon. */
-.material-icons.md-18, .mi.md-18 { font-size: 18px; }
-.material-icons.md-24, .mi.md-24 { font-size: 24px; }
-.material-icons.md-36, .mi.md-36 { font-size: 36px; }
-.material-icons.md-48, .mi.md-48 { font-size: 48px; }
-
-/* Rules for using icons as black on a light background. */
-.material-icons.md-dark, .mi.md-dark { color: rgba(0, 0, 0, 0.54); }
-.material-icons.md-dark.md-inactive, .mi.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
-
-/* Rules for using icons as white on a dark background. */
-.material-icons.md-light, .mi.md-light { color: rgba(255, 255, 255, 1); }
-.material-icons.md-light.md-inactive, .mi.md-inactive { color: rgba(255, 255, 255, 0.3); }
-
-/* Rules to rotate items */
-.material-icons.r90, .mi.r90 {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-.material-icons.r180, .mi.r180 {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-.material-icons.r270, .mi.r270 {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  -webkit-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
-  transform: rotate(270deg);
-}
-.material-icons.flip-horizontal, .mi.flip-horizontal {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
-  -webkit-transform: scale(-1, 1);
-  -ms-transform: scale(-1, 1);
-  transform: scale(-1, 1);
-}
-.material-icons.flip-vertical, .mi.flip-vertical {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
-  -webkit-transform: scale(1, -1);
-  -ms-transform: scale(1, -1);
-  transform: scale(1, -1);
-}
 @charset "UTF-8";
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -8879,53 +8786,53 @@ button.close {
 }
 /* -------------- MIXINS/VARIABLES/ETC --------------- */
 /* -------------------- UNIVERSAL -------------------- */
-/* line 20, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 21, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 body {
   background-color: #e2e2e2;
   padding-top: 110px;
 }
 
-/* line 25, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 26, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 a {
   color: #108050;
   transition: all .3s;
 }
-/* line 28, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 29, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 a:hover, a:focus, a:active {
   color: #0c603c;
 }
 
-/* line 33, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 34, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 a, a:hover, a:focus, a:active {
   text-decoration: none;
 }
 
-/* line 37, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 38, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 section {
   overflow: auto;
 }
 
-/* line 41, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 42, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 textarea {
   resize: vertical;
 }
 
-/* line 45, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 46, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .center {
   text-align: center;
 }
-/* line 47, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 48, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .center h1 {
   margin-bottom: 10px;
 }
 
 /* --------------------- LAYOUT ---------------------- */
-/* line 55, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 56, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .row {
   margin: auto;
 }
 
-/* line 59, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 60, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .content-box {
   background-color: white !important;
   border: 0;
@@ -8933,13 +8840,13 @@ textarea {
   box-shadow: -1px 1px 8px #888;
 }
 
-/* line 66, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 67, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .col-sm-3, .col-sm-6 {
   margin: 0 5px;
   padding: 0 20px 20px;
 }
 
-/* line 71, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 72, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .profile-box {
   position: -webkit-sticky;
   /* Safari */
@@ -8951,7 +8858,7 @@ textarea {
   padding: 0 15px 15px 15px;
 }
 
-/* line 81, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 82, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .feed-box {
   margin-left: 310px;
   min-height: 430px;
@@ -8959,34 +8866,34 @@ textarea {
   max-width: 600px;
 }
 
-/* line 88, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 89, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .col-sm-6 {
   margin-left: 310px;
   min-height: 430px;
 }
 
-/* line 93, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 94, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .col-sm-6 h3 {
   margin-bottom: 16px;
 }
 
-/* line 97, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 98, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .col-md-4 {
   padding: 20px;
 }
 
-/* line 101, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 102, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .col-md-8 {
   padding: 20px 20px 12px 20px;
 }
 
 /* ------------------ TYPOGRAPHY -------------------- */
-/* line 108, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 109, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
 
-/* line 112, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 113, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 h1 {
   font-size: 3em;
   letter-spacing: -2px;
@@ -8994,13 +8901,13 @@ h1 {
   margin-top: 0px;
   text-align: center;
 }
-/* line 118, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 119, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 h1 sup {
   font-size: .7em;
   margin: 0 5px;
 }
 
-/* line 124, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 125, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 h2 {
   color: #777777;
   font-size: 1.2em;
@@ -9010,7 +8917,7 @@ h2 {
   text-align: center;
 }
 
-/* line 133, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 134, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 #note {
   color: #777777;
   font-size: 1em;
@@ -9020,14 +8927,14 @@ h2 {
   text-align: center;
 }
 
-/* line 142, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 143, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 p {
   font-size: 1.1em;
   line-height: 1.7em;
 }
 
 /* -------------------- HEADER -------------------- */
-/* line 150, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 151, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .navbar-inverse {
   background-color: #12905a;
   height: 70px;
@@ -9036,24 +8943,24 @@ p {
   border: none;
   transition: all .3s;
 }
-/* line 157, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 158, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .navbar-inverse .navbar-nav > li > a {
   color: #eee;
 }
 
-/* line 162, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 163, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .dropdown {
   height: 60px;
   transition: all .3s;
 }
 
-/* line 167, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 168, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .dropdown-toggle {
   height: 60px;
   margin-top: 0px;
 }
 
-/* line 172, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 173, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 #logotext, #alpha-menu {
   color: #fff;
   font-size: 1.5em;
@@ -9064,7 +8971,7 @@ p {
   padding-top: 15px;
 }
 
-/* line 182, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 183, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 #logotext {
   padding-top: 9px;
   float: left;
@@ -9072,13 +8979,13 @@ p {
   text-transform: uppercase;
   margin-right: 4px;
 }
-/* line 188, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 189, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 #logotext:hover {
   color: #fff;
   text-decoration: none;
 }
 
-/* line 194, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 195, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 #logo img {
   display: block;
   float: left;
@@ -9087,13 +8994,13 @@ p {
   transition: all .3s;
 }
 
-/* line 202, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 203, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .menu-nav-scroll {
   height: 20px;
 }
 
 /* -------------------- FOOTER -------------------- */
-/* line 208, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 210, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 footer {
   background-color: #e2e2e2;
   border-top: 1px solid #777777;
@@ -9102,51 +9009,51 @@ footer {
   padding: 5px 10%;
   clear: both;
 }
-/* line 215, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 217, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 footer a {
   color: #555555;
 }
-/* line 217, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 219, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 footer a:hover, footer a:focus, footer a:active {
   color: #222222;
 }
-/* line 221, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 223, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 footer small {
   float: left;
 }
-/* line 224, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 226, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 footer ul {
   float: right;
   list-style: none;
 }
-/* line 227, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 229, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 footer ul li {
   float: left;
   margin-left: 15px;
 }
 
 /* ------------------- SIDEBAR ------------------- */
-/* line 238, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 240, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 aside section.user_info {
   margin-top: 20px;
 }
-/* line 241, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 243, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 aside section {
   margin-top: 20px;
   padding: 10px 0;
 }
-/* line 244, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 246, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 aside section:first-child {
   border: 0;
   padding-top: 0;
 }
-/* line 248, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 250, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 aside section span {
   display: block;
   line-height: 1;
   margin-bottom: 3px;
 }
-/* line 253, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 255, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 aside section h1 {
   font-size: 1.4em;
   letter-spacing: -1px;
@@ -9154,7 +9061,7 @@ aside section h1 {
   margin-bottom: 3px;
   text-align: left;
 }
-/* line 261, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 263, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 aside textarea, aside input[type=text] {
   font-size: 18px;
   padding: 11px;
@@ -9162,12 +9069,12 @@ aside textarea, aside input[type=text] {
   resize: none;
   background-color: white;
 }
-/* line 268, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 270, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 aside input {
   background-color: white;
 }
 
-/* line 273, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 275, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .gravatar {
   border: 3px solid black;
   border-radius: 30% 10%;
@@ -9175,12 +9082,12 @@ aside input {
   margin-right: 10px;
 }
 
-/* line 281, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 282, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .gravatar_edit {
   margin-top: 35px;
 }
 
-/* line 285, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 286, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .stats {
   display: block;
   margin: 6px auto 0;
@@ -9188,7 +9095,7 @@ aside input {
   padding: 0;
   text-align: center;
 }
-/* line 291, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 292, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .stats a {
   border-left: 1px solid #eeeeee;
   color: #777;
@@ -9196,43 +9103,43 @@ aside input {
   padding: 0 8px;
   font-size: 1.1em;
 }
-/* line 297, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 298, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .stats a:first-child {
   border: 0;
   padding-left: 0;
 }
-/* line 301, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 302, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .stats a:hover {
   color: #108050;
 }
-/* line 305, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 306, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .stats strong {
   display: block;
 }
 
-/* line 310, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 311, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .stats_wrapper {
   display: block;
   margin: auto;
   width: 152px;
 }
 
-/* line 316, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 317, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .user_avatars {
   margin-top: 40px;
   overflow: auto;
 }
-/* line 319, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 320, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .user_avatars .gravatar {
   margin: 1px 1px;
   width: 30px;
 }
-/* line 323, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 324, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .user_avatars a {
   padding: 0;
 }
 
-/* line 328, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 329, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .gravatar_profile .gravatar {
   border-width: 3px;
 }
@@ -9255,8 +9162,18 @@ aside input {
   margin-left: 92px;
 }
 
+/* line 348, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+#gruntcounter {
+  margin: -12px 0 6px 6px;
+}
+/* line 350, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+#gruntcounter p {
+  font-size: 1em;
+  margin-bottom: 0px;
+}
+
 /* -------------------- FORMS -------------------- */
-/* line 351, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 359, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
   margin-bottom: 15px;
@@ -9266,99 +9183,131 @@ input, textarea, select, .uneditable-input {
   box-sizing: border-box;
 }
 
-/* line 358, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 366, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 input {
   height: auto !important;
 }
 
-/* line 362, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 370, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 #error_explanation {
   color: red;
 }
-/* line 364, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 372, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 #error_explanation ul {
   color: red;
   margin: 0 0 20px 0;
 }
 
-/* line 376, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 380, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .field_with_errors .form-control {
   color: #a94442;
 }
 
-/* line 381, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 385, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .checkbox {
   margin: -10px 0 15px 0;
 }
-/* line 383, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 387, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .checkbox span {
   font-weight: normal;
   margin-left: 20px;
 }
 
-/* line 389, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 393, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .btn-primary {
   color: #fff;
   background-color: #14a064;
   border-color: #0a5032;
   transition: all .3s;
 }
-/* line 394, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 398, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .btn-primary:hover {
   background-color: #108050 !important;
 }
-/* line 397, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 401, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .btn-primary:focus, .btn-primary:active, .btn-primary .active, .btn-primary .open > .dropdown-toggle.btn-primary {
   background-color: #0c603c !important;
 }
 
-/* line 402, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 406, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .btn-follow, .btn-unfollow {
   width: 80px;
   margin-top: 15px;
 }
 
-/* line 407, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 411, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .btn-unfollow {
   background-color: #999999;
   border-color: #333;
   opacity: .3;
   t: "Following";
 }
-/* line 412, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 416, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .btn-unfollow:hover {
   background-color: #990000 !important;
   opacity: 1;
 }
-/* line 416, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 420, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .btn-unfollow:focus, .btn-unfollow:active {
   background-color: #660000 !important;
   opacity: 1;
 }
 
-/* line 422, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 426, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 #session_remember_me {
   margin-left: 0;
   width: auto;
 }
 
 /* -------------------- USERS -------------------- */
-/* line 429, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 434, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .users {
   list-style: none;
   margin-left: -20px;
   margin-top: 12px;
   padding-right: 25px;
 }
-/* line 435, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 440, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .users li {
   border-bottom: 1px solid #eeeeee;
   overflow: auto;
   padding: 10px 0;
 }
 
+/* line 447, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+.user_avatars {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/* line 454, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+.user_avatars a {
+  border-left: 0px solid #eeeeee;
+  float: left;
+  padding: 0;
+  font-size: 1.1em;
+}
+
+/* line 461, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+.user_avatars .gravatar {
+  margin: 5px;
+}
+
+/* line 465, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+.follow_right {
+  float: right;
+  margin-top: -10px;
+}
+
+/* line 470, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+.edit_profile_link {
+  font-size: .8em;
+}
+
 /* ----------------- MICROPOSTS ------------------ */
-/* line 445, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 477, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .microposts {
   list-style: none;
   padding: 0;
@@ -9366,43 +9315,43 @@ input {
   position: relative;
   z-index: 1;
 }
-/* line 451, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 483, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .microposts li {
   border-top: 1px solid #e8e8e8;
   padding: 20px 10px;
   background-color: white;
 }
-/* line 456, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 488, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .microposts .user {
   margin-top: 5em;
   padding-top: 0;
 }
-/* line 460, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 492, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .microposts .content {
   display: block;
   margin-left: 68px;
   padding: 8px;
   font-size: 1.1em;
 }
-/* line 465, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 497, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .microposts .content img {
   display: block;
 }
-/* line 469, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 501, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .microposts .timestamp {
   color: #777777;
   display: block;
   margin-left: 68px;
   margin-top: 15px;
 }
-/* line 475, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 507, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .microposts .gravatar {
   float: left;
   margin-right: 10px;
   margin-top: 5px;
 }
 
-/* line 482, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 514, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .micropost_picture img, .help_picture img {
   border: 0px solid #555;
   border-radius: 2px;
@@ -9411,41 +9360,45 @@ input {
   margin: 15px 10px 0;
 }
 
-/* line 490, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 522, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 span.picture {
   margin-top: 10px;
   margin-bottom: -10px;
 }
-/* line 493, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 525, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 span.picture input {
   border: 0;
 }
 
 /* ---------------- MISCELLANEOUS ---------------- */
-/* line 501, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 533, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .powered img {
   height: 111px;
   padding: 0 5px;
   opacity: 0.6;
   transition: all .2s;
 }
-/* line 506, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 538, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .powered img:hover {
   opacity: 1;
   transform: scale(1.1);
 }
 
-/* line 512, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 544, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .jumbotron {
   background-color: #eee;
   padding-top: 20px;
 }
-/* line 515, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 547, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .jumbotron img {
   height: 100px;
 }
+/* line 550, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+.jumbotron h2 {
+  font-size: 1.8em;
+}
 
-/* line 520, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 555, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .debug_dump {
   clear: both;
   float: left;
@@ -9456,50 +9409,39 @@ span.picture input {
   box-sizing: border-box;
 }
 
-/* line 528, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 563, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .loginbox {
   padding-top: 25px;
   padding-bottom: 5px;
 }
 
-/* line 533, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 568, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .alert {
   margin-top: -20px;
 }
 
-/* line 537, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 572, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .signup_alert {
   margin-top: -10px;
 }
 
-/* line 541, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
-.follow_right {
-  float: right;
-  margin-top: -10px;
-}
-
-/* line 546, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
-.edit_profile_link {
-  font-size: .8em;
-}
-
-/* line 550, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 576, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .helpbox {
   padding: 0px !important;
 }
 
-/* line 554, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 580, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .pagination > li > a {
   color: #108050;
 }
 
-/* line 558, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 584, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .pagination > li.active > a,
 .pagination > li.active:hover > a {
   background-color: #108050;
 }
 
-/* line 563, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 589, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .pagination > li > a:focus,
 .pagination > li > a:hover,
 .pagination > li > span:focus,
@@ -9510,7 +9452,7 @@ span.picture input {
   border-color: #ddd;
 }
 
-/* line 573, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 599, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .accordion {
   background-color: #fff;
   color: #444;
@@ -9525,132 +9467,127 @@ span.picture input {
   transition: 0.1s;
 }
 
-/* line 587, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 613, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .active, .accordion:hover {
   background-color: #14a064;
   color: white;
   border-bottom: 1px solid #14a064;
 }
 
-/* line 593, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 619, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .panel {
   padding: 10px 18px 0;
   display: none;
   background-color: white;
 }
 
-/* line 599, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
-.user_avatars {
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-/* line 606, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
-.user_avatars a {
-  border-left: 0px solid #eeeeee;
-  float: left;
-  padding: 0;
-  font-size: 1.1em;
-}
-
-/* line 613, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
-.user_avatars .gravatar {
-  margin: 5px;
-}
-
-/* line 617, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 625, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .btn-login {
   font-size: 1em;
   transition: all .3s;
 }
-/* line 621, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 628, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .btn-login:hover {
   background-color: #108050 !important;
 }
 
-/* line 629, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 633, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .btn-grunt {
   font-size: 1em;
   transition: all .3s;
   transition-origin: 50% 50%;
 }
-/* line 633, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 637, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .btn-grunt:hover {
   background-color: #108050 !important;
 }
 
-/* line 641, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 642, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .btn-signup {
-  font-size: 1em;
+  font-size: 1.5em;
   transition: all .3s;
   transition-origin: 50% 50%;
 }
-/* line 645, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 646, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .btn-signup:hover {
   background-color: #108050 !important;
   transform: scale(1.2);
 }
 
-/* line 651, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 652, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .alert-warning, .alert-success, .alert-danger, .alert-info {
   margin-top: 10px;
   margin-bottom: 20px;
   font-size: 1em;
 }
 
-/* line 657, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 658, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .btn-nav-login {
   color: #0c603c !important;
   background-color: #fff !important;
   border-color: #0a5032 !important;
   transition: all .3s;
 }
-/* line 662, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 663, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .btn-nav-login:hover {
   background-color: #0c603c !important;
   color: #fff !important;
 }
-/* line 666, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 667, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .btn-nav-login:focus, .btn-nav-login:active, .btn-nav-login .active, .btn-nav-login .open > .dropdown-toggle.btn-nav-login {
   background-color: #0c603c !important;
   color: #fff !important;
 }
 
-/* line 672, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 673, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .menu-mobile {
   display: none;
 }
 
-/* line 674, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 675, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .users_follow_right {
   display: none;
 }
 
-/* line 678, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 679, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .desktop-hidden {
   display: none;
 }
 
-/* line 682, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 683, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .log-in-flash {
   margin-top: -10px;
 }
 
-/* line 686, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+/* line 687, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
 .btn-nav-login {
   margin-top: -6px;
 }
 
-/* line 690, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
-#gruntcounter {
-  margin: -12px 0 6px 6px;
+/* line 691, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+.help-img-desktop {
+  display: block;
+  max-width: 100%;
+  margin: 20px 0 20px 0;
 }
-/* line 692, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
-#gruntcounter p {
-  font-size: 1em;
-  margin-bottom: 0px;
+
+/* line 696, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+.help-img-mobile {
+  display: none;
+}
+
+/* line 700, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+.help-p-desktop {
+  display: block;
+}
+/* line 702, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+.help-p-desktop img {
+  height: 30px;
+}
+
+/* line 706, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+.help-p-mobile {
+  display: none;
 }
 
 /* ------------------------------------------------------------------- */
@@ -9659,88 +9596,47 @@ span.picture input {
 /* ------------------------------------------------------------------- */
 /* ------------------------------------------------------------------- */
 @media only screen and (max-width: 991px) {
-  /* line 720, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
-  .mobile-hidden {
-    display: none;
-  }
-
-  /* line 727, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
-  .btn-nav-login {
-    margin-top: 0px;
-  }
-
-  /* line 731, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
-  .signup-link {
-    font-size: 1em;
-  }
-
-  /* line 735, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
-  .bigger-text {
-    font-size: 2em !important;
-  }
-
-  /* line 739, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
-  #gruntcounter {
-    font-size: 1.7em;
-  }
-
-  /* line 743, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
-  .menu-desktop {
-    display: none;
-  }
-
-  /* line 744, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
-  .menu-mobile {
-    display: block;
-    margin-top: -10px;
-  }
-
-  /* line 749, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
-  .mobile-row {
-    padding-top: 180px;
-  }
-
   /* ----------------- UNIVERSAL ------------------ */
-  /* line 754, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 724, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   body {
     background-color: white;
   }
 
-  /* line 758, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 728, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .jumbotron {
     margin-top: -30px;
   }
 
-  /* line 762, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 732, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .jumbotron h2 {
-    font-size: 2em;
+    font-size: 1.6em;
     line-height: 1.3;
   }
 
-  /* line 767, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 737, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .content-box {
     font-size: .6em;
   }
 
-  /* line 771, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 741, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .container {
     width: 100%;
     margin: 0 0 0 0;
     padding: 0 10px 0 10px;
   }
 
-  /* line 777, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 747, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .loginbox {
     font-size: 1.5em !important;
   }
 
-  /* line 781, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 751, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .powered {
     margin-bottom: 25px;
   }
 
   /* ------------------ LAYOUT -------------------- */
-  /* line 788, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 758, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .content-box {
     background-color: white !important;
     display: block;
@@ -9751,70 +9647,70 @@ span.picture input {
     box-shadow: none;
   }
 
-  /* line 800, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 768, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .col-md-4, .col-md-6, .col-md-8 {
     font-size: 2em;
   }
 
   /* ---------------- TYPOGRAPHY ------------------ */
-  /* line 807, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 775, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   h1 {
     font-size: 65px;
   }
 
-  /* line 811, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 779, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   h2 {
     font-size: 35px;
   }
 
   /* ----------------- HEADER ------------------ */
-  /* line 818, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 786, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .navbar-inverse {
     opacity: 1 !important;
     margin-bottom: 0;
   }
 
-  /* line 823, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 791, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .navbar.navbar-inverse .dropdown-menu,
   .navbar.navbar-inverse .dropdown-menu > li {
     background-color: black;
     float: none;
   }
 
-  /* line 828, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 796, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .navbar.navbar-inverse .dropdown-menu > li > a {
     color: #fff !important;
   }
 
-  /* line 832, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 800, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .navbar.navbar-inverse .dropdown-menu > li > a:hover {
     color: #fff !important;
   }
 
-  /* line 836, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 804, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .navbar-nav {
     position: absolute;
     right: 20px;
     transition: all .3s;
   }
-  /* line 840, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 808, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .navbar-nav li {
     display: block;
     float: left;
     transition: all .3s;
   }
-  /* line 845, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 813, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .navbar-nav .dropdown {
     height: 50px;
   }
-  /* line 848, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 816, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .navbar-nav .dropdown-toggle {
     height: 50px;
     margin-top: 0px;
     transition: all .3s;
   }
 
-  /* line 855, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 823, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .navbar-inverse {
     background-color: #12905a;
     height: 40px;
@@ -9823,24 +9719,24 @@ span.picture input {
     border: none;
     transition: all .3s;
   }
-  /* line 862, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 830, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .navbar-inverse .navbar-nav > li > a {
     color: #eee;
   }
 
-  /* line 867, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 835, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .dropdown {
     height: 60px;
     transition: all .3s;
   }
 
-  /* line 872, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 840, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .dropdown-toggle {
     height: 60px;
     margin-top: 0px;
   }
 
-  /* line 877, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 845, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   #logotext, #alpha-menu {
     color: #fff;
     font-size: 1.5em;
@@ -9851,7 +9747,7 @@ span.picture input {
     padding-top: 15px;
   }
 
-  /* line 887, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 855, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   #logotext {
     padding-top: 9px;
     float: left;
@@ -9859,13 +9755,13 @@ span.picture input {
     text-transform: uppercase;
     margin-right: 4px;
   }
-  /* line 893, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 861, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   #logotext:hover {
     color: #fff;
     text-decoration: none;
   }
 
-  /* line 899, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 867, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   #logo img {
     display: block;
     float: left;
@@ -9874,20 +9770,20 @@ span.picture input {
     transition: all .3s;
   }
 
-  /* line 907, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 875, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .menu-nav-scroll {
     height: 20px;
   }
 
   /* ------------------ FOOTER ------------------ */
-  /* line 918, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 882, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   footer {
     background-color: white;
     padding: 0 4%;
   }
 
   /* ----------------- SIDEBAR ----------------- */
-  /* line 927, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 891, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .profile-box {
     width: 100%;
     z-index: 50;
@@ -9897,35 +9793,35 @@ span.picture input {
     box-shadow: 0px 4px 8px #555;
   }
 
-  /* line 936, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 900, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .feed-box {
     max-width: 100%;
     margin-top: -25px;
   }
 
-  /* line 942, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 906, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   aside section.user_info {
     margin-left: 10%;
     text-align: center;
     float: left;
   }
-  /* line 948, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 912, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   aside section {
     margin-top: 20px;
     padding: 10px 0;
   }
-  /* line 951, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 915, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   aside section:first-child {
     border: 0;
     padding-top: 0;
   }
-  /* line 955, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 919, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   aside section span {
     display: block;
     line-height: 1;
     margin-bottom: 3px;
   }
-  /* line 960, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 924, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   aside section h1 {
     font-size: 2.5em;
     letter-spacing: -1px;
@@ -9935,14 +9831,14 @@ span.picture input {
     display: block;
     clear: both;
   }
-  /* line 969, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 933, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   aside section .gravatar, aside section .gravatar_profile .gravatar {
     float: none;
     margin-left: 15px;
     margin-bottom: 15px;
     border-width: 3px;
   }
-  /* line 976, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 940, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   aside section .profile_link_view, aside section .profile_link_edit {
     margin: auto;
     display: block;
@@ -9951,7 +9847,7 @@ span.picture input {
     font-size: 1em;
     display: none;
   }
-  /* line 985, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 949, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   aside textarea, aside input[type=text] {
     font-size: 16px;
     padding: 11px;
@@ -9962,23 +9858,23 @@ span.picture input {
     margin-right: 0px;
     margin-top: 15px;
   }
-  /* line 995, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 959, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   aside .btn-primary {
     width: 90%;
     margin-left: 0;
     margin-right: 10px;
   }
-  /* line 1000, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 964, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   aside span.picture {
     margin: 10px 0 -10px 25%;
     font-size: 2em;
   }
-  /* line 1003, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 967, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   aside span.picture input {
     border: 0;
   }
 
-  /* line 1009, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 973, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .stats {
     display: block;
     margin: 0 0 0 4%;
@@ -9988,7 +9884,7 @@ span.picture input {
     float: left;
     clear: both;
   }
-  /* line 1017, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 981, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .stats a {
     border-left: 1px solid #eeeeee;
     color: #777;
@@ -9996,21 +9892,21 @@ span.picture input {
     padding: 0 10px;
     font-size: 1.8em;
   }
-  /* line 1023, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 987, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .stats a:first-child {
     border: 0;
     padding-left: 0;
   }
-  /* line 1027, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 991, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .stats a:hover {
     color: #108050;
   }
-  /* line 1031, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 995, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .stats strong {
     display: block;
   }
 
-  /* line 1036, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 1000, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   #follow-form {
     position: absolute;
     top: 25px;
@@ -10018,7 +9914,7 @@ span.picture input {
     display: block;
   }
 
-  /* line 1043, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 1007, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .users_follow_right {
     position: absolute;
     top: 25px;
@@ -10026,14 +9922,14 @@ span.picture input {
     display: block;
   }
 
-  /* line 1050, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 1014, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .stats_wrapper {
     display: block;
     margin: auto;
     width: 180px;
   }
 
-  /* line 1056, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 1020, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .user_avatars {
     padding: 0;
     margin-left: auto;
@@ -10041,7 +9937,7 @@ span.picture input {
     width: 80%;
   }
 
-  /* line 1065, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 1027, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .user_avatars a {
     border-left: 0px solid #eeeeee;
     float: left;
@@ -10049,45 +9945,85 @@ span.picture input {
     font-size: 1.1em;
   }
 
-  /* line 1072, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 1034, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .user_avatars .gravatar {
     display: block;
     margin: 10px;
     padding: 0px;
   }
 
+  /* line 1040, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  #gruntcounter {
+    font-size: 1.7em;
+  }
+
   /* ----------------- FORMS ------------------- */
-  /* line 1082, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 1046, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .form-control {
     font-size: 24px;
   }
 
-  /* line 1086, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 1050, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .btn-login {
     font-size: 1.3em;
   }
 
-  /* line 1090, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 1054, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .btn-signup {
     font-size: 24px;
   }
 
+  /* line 1058, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  .btn-nav-login {
+    margin-top: 0px;
+  }
+
+  /* line 1062, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  .signup-link {
+    font-size: 1em;
+  }
+
   /* ----------------- USERS ------------------ */
-  /* line 1096, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 1068, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .users {
     list-style: none;
     margin-left: -20px;
     padding-right: 25px;
   }
-  /* line 1101, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 1073, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .users li {
     border-bottom: 1px solid #eeeeee;
     overflow: auto;
     padding: 25px 0;
   }
 
+  /* line 1080, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  .all-users-flash {
+    font-size: .3em !important;
+  }
+
+  /* line 1084, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  .user-flash {
+    font-size: .3em;
+  }
+
+  /* line 1088, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  .users {
+    font-size: .6em;
+  }
+
+  /* line 1092, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  .havent-grunted {
+    font-size: 2em;
+  }
+
+  /* line 1096, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  .user_avatars {
+    display: none;
+  }
+
   /* --------------- MICROPOSTS ---------------- */
-  /* line 1111, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 1103, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .microposts {
     list-style: none;
     padding: 0;
@@ -10095,44 +10031,44 @@ span.picture input {
     position: relative;
     z-index: 1;
   }
-  /* line 1117, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 1109, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .microposts li {
     border-top: 1px solid #e8e8e8;
     padding: 20px 10px;
     background-color: white;
   }
-  /* line 1122, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 1114, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .microposts .user {
     margin-top: 5em;
     padding-top: 0;
   }
-  /* line 1126, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 1118, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .microposts .content {
     display: block;
     margin-left: 68px;
     padding: 8px;
     font-size: 1.1em;
   }
-  /* line 1131, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 1123, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .microposts .content img {
     display: block;
     margin-left: 45px;
   }
-  /* line 1136, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 1128, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .microposts .timestamp {
     color: #777777;
     display: block;
     margin-left: 105px;
     margin-top: 15px;
   }
-  /* line 1142, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 1134, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .microposts .gravatar {
     float: left;
     margin-right: 15px;
     margin-top: 5px;
   }
 
-  /* line 1150, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 1141, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .micropost_form .btn-primary {
     color: #fff;
     background-color: #14a064;
@@ -10140,109 +10076,89 @@ span.picture input {
     on: background-color .3s;
     font-size: 2em;
   }
-  /* line 1156, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 1147, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .micropost_form .btn-primary:hover {
     background-color: #108050 !important;
   }
-  /* line 1159, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 1150, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .micropost_form .btn-primary:focus, .micropost_form .btn-primary:active, .micropost_form .btn-primary .active, .micropost_form .btn-primary .open > .dropdown-toggle.btn-primary {
     background-color: #0c603c !important;
   }
 
   /* -------------- MISCELLANEOUS -------------- */
-  /* line 1167, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 1158, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .mobile-center {
     padding-left: 0;
     text-align: center;
   }
 
-  /* line 1173, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 1163, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   p {
     font-size: .6em;
   }
 
-  /* line 1177, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 1167, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   button.accordion {
     font-size: 1em;
   }
 
-  /* line 1181, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 1171, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .pagination-size {
     font-size: .5em;
   }
 
-  /* line 1185, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 1175, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .alert-warning, .alert-success, .alert-danger, .alert-info {
     margin-top: 10px;
     margin-bottom: 0px;
     font-size: 2em;
   }
 
-  /* line 1191, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 1181, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .log-in-flash {
     font-size: 0.5em;
     margin-bottom: 20px;
   }
 
-  /* line 1196, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 1186, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .signup-flash {
     font-size: 1em;
     margin-bottom: 20px;
   }
 
-  /* line 1201, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 1191, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .all-users-paginate {
     font-size: .5em !important;
   }
 
-  /* line 1205, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 1195, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .profile-paginate {
     font-size: 1.5em !important;
   }
 
-  /* line 1209, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
-  .all-users-flash {
-    font-size: .3em !important;
-  }
-
-  /* line 1214, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
-  .user-flash {
-    font-size: .3em;
-  }
-
-  /* line 1218, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
-  .users {
-    font-size: .6em;
-  }
-
-  /* line 1222, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
-  .havent-grunted {
-    font-size: 2em;
-  }
-
-  /* line 1226, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 1199, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .homepage-pagination {
     font-size: 1.5em;
   }
 
-  /* line 1230, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
-  .user_avatars {
-    display: none;
-  }
-
-  /* line 1234, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 1203, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .accordion {
     font-size: 36px;
   }
 
-  /* line 1238, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 1207, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   .grog img {
     width: 30%;
     height: auto;
     margin: 20px auto;
   }
 
-  /* line 1244, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 1213, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  .powered-text {
+    font-size: 1em;
+  }
+
+  /* line 1217, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   h1 {
     font-size: 3em;
     letter-spacing: -2px;
@@ -10250,29 +10166,67 @@ span.picture input {
     margin-top: 0px;
     text-align: center;
   }
-  /* line 1250, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  /* line 1223, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
   h1 sup {
     font-size: .7em;
     margin: 0 5px;
   }
+
+  /* line 1229, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  .mobile-hidden {
+    display: none;
+  }
+
+  /* line 1233, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  .help-img-desktop {
+    display: none;
+  }
+
+  /* line 1236, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  .help-img-mobile {
+    display: block;
+    max-width: 100%;
+    margin: 20px 0 20px 0;
+  }
+
+  /* line 1243, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  .help-p-desktop {
+    display: none;
+  }
+
+  /* line 1246, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  .help-p-mobile {
+    display: block;
+  }
+  /* line 1248, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  .help-p-mobile i {
+    position: relative;
+    top: 12px;
+    color: black !important;
+  }
+  /* line 1253, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  .help-p-mobile img {
+    height: 30px;
+  }
+
+  /* line 1258, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  .bigger-text {
+    font-size: 2em !important;
+  }
+
+  /* line 1262, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  .menu-desktop {
+    display: none;
+  }
+
+  /* line 1263, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  .menu-mobile {
+    display: block;
+    margin-top: -10px;
+  }
+
+  /* line 1268, /home/geoff/dev/grunt_app/app/assets/stylesheets/custom.scss */
+  .mobile-row {
+    padding-top: 180px;
+  }
 }
-/*
-
-*/
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
-
-
-
- */
-
