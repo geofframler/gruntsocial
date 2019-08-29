@@ -27,6 +27,6 @@
 
 /db/*
 /config/database.yml
-
+/config/secrets.yml
 
 .env
