@@ -24,9 +24,9 @@
 
 # Ignore uploaded test images.
 /public/uploads
-/public/assets
 
 /db/*
 /config/database.yml
+
 
 .env
