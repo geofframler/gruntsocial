@@ -197,6 +197,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    rb-readline (0.5.5)
     rest-client (2.0.2)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
@@ -289,6 +290,7 @@ DEPENDENCIES
   pg (= 0.20.0)
   rails (= 5.1.4)
   rails-controller-testing (= 1.0.2)
+  rb-readline
   sass-rails (= 5.0.6)
   spring (= 2.0.2)
   spring-watcher-listen (= 2.0.1)
