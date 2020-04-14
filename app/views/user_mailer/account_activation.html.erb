@@ -1,10 +1,18 @@
-<h1>Grunt</h1>
+<div id="container" style="width:100%;text-align:center;">
+  <div id="topbar" style="font-weight: bold;text-transform: uppercase;text-align:center;color:white;background-color:#12905a;height:70px;padding-top:10px;box-shadow:0px 4px 8px #555;border:none;">
+    <h1 style="margin-top: 15px;">Grunt</h1>
+  </div>
 
-<p>Hi <%= @user.name %>,</p>
+  <div id="contentarea" style="width:60%;margin:50px auto;padding:20px 30px 30px 30px;background-color:#EAEAEA;border-radius:15px;text-align:center;font-size: 28px;">
+  <h3>Account Activation</h3>
+  <p>Hi <%= @user.name %>,</p>
 
-<p>
-  Welcome to Grunt! Click on the link below to activate your account:
-</p>
+    <p>
+      Welcome to Grunt! Click on the link below to activate your account:
+    </p>
 
-<%= link_to "Activate", edit_account_activation_url(@user.activation_token,
-                                                    email: @user.email) %>
+    <%= link_to "Activate", edit_account_activation_url(@user.activation_token,
+                                                        email: @user.email) %>
+  </div>
+  <a href="https://grunt.social" target="_blank">grunt.social</a>
+</div>
