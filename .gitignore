@@ -28,5 +28,6 @@
 /db/*
 /config/database.yml
 /config/secrets.yml
+/config/application.yml
 
 .env
